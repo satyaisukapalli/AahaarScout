@@ -1,0 +1,6 @@
+{
+  "name": "Aahaarscout",
+  "description": "AI-powered food and restaurant discovery platform. Find top dishes, trending dining spots, and curated recommendations tailored to your cravings.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
