@@ -1,6 +1,8 @@
 import React, { useState, useMemo } from 'react';
 import { Restaurant } from '../types';
 import { HYDERABAD_MAP_IMAGE } from '../data/restaurants';
+import { CrowdMeter } from './CrowdMeter';
+import { calculateCrowdInfo, CrowdLevel } from '../utils/crowdMeter';
 
 interface SearchResultsScreenProps {
   restaurants: Restaurant[];
@@ -37,9 +39,22 @@ const PIN_COORDINATES: Record<string, { top: string; left: string }> = {
   'pista-house': { top: '76%', left: '56%' },
   'bawarchi-restaurant': { top: '36%', left: '54%' },
   'cafe-bahar': { top: '52%', left: '48%' },
-  'l-osteria-moderna': { top: '32%', left: '38%' },
-  'da-enzo-al-29': { top: '65%', left: '45%' },
-  'rossetti-ristorante': { top: '46%', left: '60%' },
+  'kumi-modern-japanese': { top: '60%', left: '30%' },
+  'ctr-shri-sagar': { top: '30%', left: '40%' },
+  'toit-brewpub': { top: '45%', left: '68%' },
+  'mavalli-tiffin-room-mtr': { top: '65%', left: '48%' },
+  'grasshopper-bangalore': { top: '80%', left: '52%' },
+  'murugan-idli-shop': { top: '42%', left: '50%' },
+  'dakshin-itc-grand-chola': { top: '68%', left: '42%' },
+  'amethyst-wild-garden-cafe': { top: '36%', left: '62%' },
+  'paragon-restaurant-kochi': { top: '34%', left: '55%' },
+  'kashi-art-cafe': { top: '62%', left: '35%' },
+  'dharani-daspalla': { top: '50%', left: '46%' },
+  'sea-inn-raju-gari-dhaba': { top: '25%', left: '72%' },
+  'murali-krishna-nellore': { top: '38%', left: '50%' },
+  'mayuri-chepala-pulusu': { top: '55%', left: '42%' },
+  'blue-fox-minerva-nellore': { top: '70%', left: '58%' },
+  'komala-vilas-nellore': { top: '32%', left: '60%' },
 };
 
 export const SearchResultsScreen: React.FC<SearchResultsScreenProps> = ({
@@ -52,6 +67,8 @@ export const SearchResultsScreen: React.FC<SearchResultsScreenProps> = ({
   const [viewMode, setViewMode] = useState<ViewMode>('split');
   const [priceFilter, setPriceFilter] = useState<string>('All');
   const [vibeFilter, setVibeFilter] = useState<string>('All');
+  const [crowdFilter, setCrowdFilter] = useState<string>('All');
+  const [simulatedHour, setSimulatedHour] = useState<number | undefined>(undefined);
   const [openNow, setOpenNow] = useState(false);
   const [highlyRated, setHighlyRated] = useState(true);
   const [nonVeg, setNonVeg] = useState(false);
@@ -69,6 +86,10 @@ export const SearchResultsScreen: React.FC<SearchResultsScreenProps> = ({
           r.tags.some(t => t.toLowerCase().includes(vibeFilter.toLowerCase()));
         if (!matchesVibe) return false;
       }
+      if (crowdFilter !== 'All') {
+        const crowdInfo = calculateCrowdInfo(r, simulatedHour);
+        if (crowdInfo.level !== crowdFilter) return false;
+      }
       if (highlyRated && r.rating < 4.6) return false;
       if (nonVeg && !r.tags.some(t => ['Biryani', 'Kebabs', 'Dinner', 'Italian'].includes(t))) return false;
       if (distanceFilter !== 'All') {
@@ -78,19 +99,21 @@ export const SearchResultsScreen: React.FC<SearchResultsScreenProps> = ({
       }
       return true;
     });
-  }, [restaurants, priceFilter, vibeFilter, highlyRated, nonVeg, distanceFilter]);
+  }, [restaurants, priceFilter, vibeFilter, crowdFilter, simulatedHour, highlyRated, nonVeg, distanceFilter]);
 
   // Active filters count
   const activeFilterCount = useMemo(() => {
     let count = 0;
     if (priceFilter !== 'All') count++;
     if (vibeFilter !== 'All') count++;
+    if (crowdFilter !== 'All') count++;
+    if (simulatedHour !== undefined) count++;
     if (openNow) count++;
     if (highlyRated) count++;
     if (distanceFilter !== 'All') count++;
     if (nonVeg) count++;
     return count;
-  }, [priceFilter, vibeFilter, openNow, highlyRated, distanceFilter, nonVeg]);
+  }, [priceFilter, vibeFilter, crowdFilter, simulatedHour, openNow, highlyRated, distanceFilter, nonVeg]);
 
   // Set default pin when displayResults changes
   const activeRestaurant = useMemo(() => {
@@ -114,6 +137,8 @@ export const SearchResultsScreen: React.FC<SearchResultsScreenProps> = ({
   const handleResetFilters = () => {
     setPriceFilter('All');
     setVibeFilter('All');
+    setCrowdFilter('All');
+    setSimulatedHour(undefined);
     setHighlyRated(false);
     setNonVeg(false);
     setOpenNow(false);
@@ -340,6 +365,77 @@ export const SearchResultsScreen: React.FC<SearchResultsScreenProps> = ({
             </div>
           </div>
 
+          {/* Crowd Meter Busyness Filter & Time Simulator */}
+          <div className="flex flex-col gap-2 pt-1 border-t border-[#ffded4]/70">
+            <div className="flex items-center justify-between flex-wrap gap-2">
+              <div className="flex items-center gap-1.5 text-xs font-grotesk font-bold text-[#523932]">
+                <span className="material-symbols-outlined text-[#ff4500] text-sm material-symbols-fill">people</span>
+                <span>Crowd Meter Busyness</span>
+                <span className="text-[10px] text-[#785950] font-normal hidden sm:inline">
+                  (Simulated by time of day)
+                </span>
+              </div>
+
+              {/* Time of Day Simulation Selector */}
+              <div className="flex items-center gap-1.5">
+                <span className="text-[11px] font-grotesk font-semibold text-[#785950] flex items-center gap-1">
+                  <span className="material-symbols-outlined text-xs text-[#ff4500]">schedule</span>
+                  Simulate Time:
+                </span>
+                <select
+                  value={simulatedHour === undefined ? 'realtime' : String(simulatedHour)}
+                  onChange={(e) => {
+                    const val = e.target.value;
+                    setSimulatedHour(val === 'realtime' ? undefined : parseInt(val, 10));
+                  }}
+                  className="bg-white border border-[#ffcfc2] text-[#1e110d] text-xs font-grotesk font-bold px-2.5 py-1 rounded-lg outline-hidden cursor-pointer shadow-2xs hover:border-[#ff4500]"
+                >
+                  <option value="realtime">⏰ Current Real Time</option>
+                  <option value="8">🍳 8:30 AM (Breakfast Rush)</option>
+                  <option value="13">🍛 1:30 PM (Peak Lunch Feasts)</option>
+                  <option value="16">☕ 4:30 PM (Cozy Cafe & Tea)</option>
+                  <option value="20">🍷 8:30 PM (Peak Dinner Rush)</option>
+                  <option value="22">🌙 10:30 PM (Late Night Tiffins)</option>
+                </select>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-2 overflow-x-auto no-scrollbar pt-0.5 pb-0.5">
+              {[
+                { value: 'All', label: 'All Crowds', emoji: '👥', desc: 'Any density' },
+                { value: 'low', label: 'Low (< 45%)', emoji: '🟢', desc: 'Walk-in ready • No wait' },
+                { value: 'medium', label: 'Medium (45-75%)', emoji: '🟡', desc: 'Moderate buzz • 5-10 min' },
+                { value: 'high', label: 'High (75%+)', emoji: '🔴', desc: 'Peak rush • 15-25 min' },
+              ].map((crowd) => {
+                const isSelected = crowdFilter === crowd.value;
+                const matchCount = crowd.value === 'All'
+                  ? restaurants.length
+                  : restaurants.filter((r) => calculateCrowdInfo(r, simulatedHour).level === crowd.value).length;
+
+                return (
+                  <button
+                    key={crowd.value}
+                    onClick={() => setCrowdFilter(crowd.value)}
+                    className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl border text-xs font-grotesk transition-all cursor-pointer whitespace-nowrap shadow-2xs active:scale-95 ${
+                      isSelected
+                        ? 'bg-gradient-to-r from-[#ff4500] to-[#ff781f] text-white border-[#ff4500] font-bold shadow-sm'
+                        : 'bg-white border-[#ffcfc2] text-[#331c15] hover:border-[#ff4500] hover:text-[#ff4500] font-semibold hover:bg-[#fff5f0]'
+                    }`}
+                    title={crowd.desc}
+                  >
+                    <span>{crowd.emoji}</span>
+                    <span>{crowd.label}</span>
+                    <span className={`text-[10px] px-1.5 py-0.5 rounded-full font-bold ${
+                      isSelected ? 'bg-white/25 text-white' : 'bg-[#fff0eb] text-[#e63900] border border-[#ffded4]'
+                    }`}>
+                      {matchCount}
+                    </span>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+
           {/* Secondary Quick Filter Pills */}
           <div className="flex flex-wrap items-center gap-2.5 pt-1">
             <button
@@ -502,6 +598,7 @@ export const SearchResultsScreen: React.FC<SearchResultsScreenProps> = ({
                       {activeRestaurant.cuisine} • {activeRestaurant.neighborhood}
                     </p>
                     <div className="flex items-center gap-2 mt-1 flex-wrap">
+                      <CrowdMeter restaurant={activeRestaurant} variant="compact" simulatedHour={simulatedHour} />
                       <span className="inline-flex items-center gap-1 bg-[#fff0eb] text-[#ff4500] text-xs px-2 py-0.5 rounded-md font-grotesk font-bold border border-[#ffcfc2]">
                         <span className="material-symbols-outlined text-xs material-symbols-fill text-amber-500">star</span>
                         {activeRestaurant.rating}
@@ -605,9 +702,12 @@ export const SearchResultsScreen: React.FC<SearchResultsScreenProps> = ({
                             </span>
                           )}
                         </div>
-                        <p className="font-grotesk text-xs sm:text-sm text-[#523932] mb-3 font-medium">
-                          {r.cuisine} • {r.priceForTwo || r.priceRange}
-                        </p>
+                        <div className="flex items-center justify-between gap-2 mb-3 flex-wrap">
+                          <p className="font-grotesk text-xs sm:text-sm text-[#523932] font-medium">
+                            {r.cuisine} • {r.priceForTwo || r.priceRange}
+                          </p>
+                          <CrowdMeter restaurant={r} variant="compact" simulatedHour={simulatedHour} />
+                        </div>
 
                         {/* AI Match Box */}
                         <div className="ai-border-gradient rounded-xl p-3.5 mb-3 bg-gradient-to-br from-[#fff5f0] to-[#fffbf7]">

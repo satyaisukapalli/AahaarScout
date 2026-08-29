@@ -45,6 +45,8 @@ export interface Restaurant {
   isSaved?: boolean;
   vibe?: string;
   vibes?: string[];
+  isVeg?: boolean;
+  isPureVeg?: boolean;
 }
 
 export interface SearchFilterState {
@@ -54,6 +56,7 @@ export interface SearchFilterState {
   highlyRated: boolean;
   distance: string;
   nonVeg: boolean;
+  isVegOnly?: boolean;
   priceLimit?: number;
   vibe?: string;
 }

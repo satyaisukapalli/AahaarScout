@@ -17,9 +17,9 @@ import { BookingModal } from './components/BookingModal';
 
 export const App: React.FC = () => {
   const [currentScreen, setCurrentScreen] = useState<ScreenType>('home');
-  const [selectedRestaurant, setSelectedRestaurant] = useState<Restaurant>(RESTAURANTS[7]); // L'Osteria Moderna default
+  const [selectedRestaurant, setSelectedRestaurant] = useState<Restaurant>(RESTAURANTS[0]); // Paradise Biryani default
   const [searchQuery, setSearchQuery] = useState('Best biryani in Hyderabad for family');
-  const [savedIds, setSavedIds] = useState<string[]>(['paradise-biryani', 'roastery-coffee-house', 'l-osteria-moderna']);
+  const [savedIds, setSavedIds] = useState<string[]>(['paradise-biryani', 'roastery-coffee-house', 'ctr-shri-sagar', 'paragon-restaurant-kochi']);
   const [isBookingOpen, setIsBookingOpen] = useState(false);
   const [bookingRestaurant, setBookingRestaurant] = useState<Restaurant | null>(null);
 
@@ -62,67 +62,6 @@ export const App: React.FC = () => {
         onNavigate={handleNavigate}
         savedCount={savedIds.length}
       />
-
-      {/* Screen Switcher Bar for fast preview of all 6 core mockups */}
-      <div className="w-full bg-[#fff1ed] border-b border-[#e5beb3]/60 px-4 py-2 flex items-center justify-between text-xs font-grotesk overflow-x-auto no-scrollbar">
-        <div className="flex items-center gap-1.5 shrink-0 text-[#5c4038]">
-          <span className="material-symbols-outlined text-sm text-[#ad2c00]">grid_view</span>
-          <span className="font-semibold hidden sm:inline">Mockup Screens:</span>
-        </div>
-        <div className="flex items-center gap-1.5 shrink-0">
-          <button
-            onClick={() => handleNavigate('home')}
-            className={`px-2.5 py-1 rounded-md font-medium transition-colors cursor-pointer ${
-              currentScreen === 'home' ? 'bg-[#ad2c00] text-white font-bold' : 'hover:bg-[#ffe2da] text-[#5c4038]'
-            }`}
-          >
-            Home & Search
-          </button>
-          <button
-            onClick={() => handleNavigate('city')}
-            className={`px-2.5 py-1 rounded-md font-medium transition-colors cursor-pointer ${
-              currentScreen === 'city' ? 'bg-[#ad2c00] text-white font-bold' : 'hover:bg-[#ffe2da] text-[#5c4038]'
-            }`}
-          >
-            City Guide
-          </button>
-          <button
-            onClick={() => handleNavigate('search')}
-            className={`px-2.5 py-1 rounded-md font-medium transition-colors cursor-pointer ${
-              currentScreen === 'search' ? 'bg-[#ad2c00] text-white font-bold' : 'hover:bg-[#ffe2da] text-[#5c4038]'
-            }`}
-          >
-            Results & Map
-          </button>
-          <button
-            onClick={() => handleNavigate('ai-assistant')}
-            className={`px-2.5 py-1 rounded-md font-medium transition-colors cursor-pointer ${
-              currentScreen === 'ai-assistant' ? 'bg-[#ad2c00] text-white font-bold' : 'hover:bg-[#ffe2da] text-[#5c4038]'
-            }`}
-          >
-            FoodieBot
-          </button>
-          <button
-            onClick={() => handleNavigate('tonight-pick')}
-            className={`px-2.5 py-1 rounded-md font-medium transition-colors cursor-pointer ${
-              currentScreen === 'tonight-pick' ? 'bg-[#ad2c00] text-white font-bold' : 'hover:bg-[#ffe2da] text-[#5c4038]'
-            }`}
-          >
-            Tonight's Pick
-          </button>
-          <button
-            onClick={() => {
-              setSelectedRestaurant(RESTAURANTS[7]); // L'Osteria Moderna
-              handleNavigate('restaurant-detail');
-            }}
-            className={`px-2.5 py-1 rounded-md font-medium transition-colors cursor-pointer ${
-              currentScreen === 'restaurant-detail' ? 'bg-[#ad2c00] text-white font-bold' : 'hover:bg-[#ffe2da] text-[#5c4038]'
-            }`}
-          >
-            Restaurant Detail
-          </button>
-        </div>
-      </div>
 
       {/* Main View Area */}
       <main className="flex-grow w-full pb-16 md:pb-0">

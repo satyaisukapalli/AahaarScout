@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { Restaurant, ScreenType } from '../types';
+import { CrowdMeter } from './CrowdMeter';
 
 interface TonightPickScreenProps {
   restaurant: Restaurant;
@@ -117,7 +118,7 @@ export const TonightPickScreen: React.FC<TonightPickScreenProps> = ({
             {restaurant.name}
           </h1>
 
-          <div className="flex items-center justify-center gap-3 text-[#ffece5] font-grotesk text-sm font-semibold">
+          <div className="flex items-center justify-center gap-3 text-[#ffece5] font-grotesk text-sm font-semibold flex-wrap">
             <span>{restaurant.cuisine}</span>
             <span className="w-1.5 h-1.5 rounded-full bg-[#ff781f]" />
             <span>{restaurant.priceRange}</span>
@@ -126,6 +127,8 @@ export const TonightPickScreen: React.FC<TonightPickScreenProps> = ({
               <span className="material-symbols-outlined text-[16px] material-symbols-fill text-amber-400">star</span>
               {restaurant.rating}
             </span>
+            <span className="w-1.5 h-1.5 rounded-full bg-[#ff781f]" />
+            <CrowdMeter restaurant={restaurant} variant="badge" className="bg-white/20 text-white border-white/30 backdrop-blur-md" />
           </div>
         </div>
       </section>

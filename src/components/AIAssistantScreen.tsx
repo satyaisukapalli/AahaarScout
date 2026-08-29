@@ -33,9 +33,11 @@ export const AIAssistantScreen: React.FC<AIAssistantScreenProps> = ({
 
   const suggestedReplies = [
     '✨ Romantic date night spot with low noise level',
-    '🍗 Best authentic Hyderabadi Dum Biryani under ₹500',
-    '☕ Quiet specialty coffee shop for remote work',
-    '🍰 Artisanal European bakery and desserts',
+    '🌶️ Famous Nellore Chepala Pulusu & Ghee Karam Dosa',
+    '🥞 Crispy Benne Dosa & Filter Coffee in Bangalore',
+    '🍗 Best authentic Dum Biryani under ₹500 in Hyderabad',
+    '🦐 Coastal Karimeen Pollichathu & Seafood in Kerala',
+    '🌿 Authentic Andhra Thali & Gongura Pachadi in Vizag',
   ];
 
   const handleSend = (textToSend?: string) => {
@@ -57,21 +59,33 @@ export const AIAssistantScreen: React.FC<AIAssistantScreenProps> = ({
       let targetRest = restaurants[0];
 
       const lower = text.toLowerCase();
-      if (lower.includes('romantic') || lower.includes('date') || lower.includes('quiet') || lower.includes('japan')) {
-        targetRest = restaurants.find((r) => r.id === 'kumi-modern-japanese') || restaurants[0];
-        replyText = `Based on your desire for a quiet, romantic atmosphere with refined dining, I strongly recommend **${targetRest.name}** in ${targetRest.neighborhood}. It boasts a 99% AI match score with an intimate mood, stellar omakase options, and low ambient noise.`;
+      if (lower.includes('nellore') || lower.includes('chepala') || lower.includes('pulusu') || lower.includes('erra karam') || lower.includes('karam dosa')) {
+        targetRest = restaurants.find((r) => r.id === 'mayuri-chepala-pulusu') || restaurants.find((r) => r.id === 'murali-krishna-nellore') || restaurants[0];
+        replyText = `In Nellore, **${targetRest.name}** is legendary! Famous for authentic claypot Korameenu Chepala Pulusu and iconic Ghee Erra Karam Dosas with a 99% AI match score.`;
+      } else if (lower.includes('bangalore') || lower.includes('benne') || lower.includes('ctr') || lower.includes('dosa')) {
+        targetRest = restaurants.find((r) => r.id === 'ctr-shri-sagar') || restaurants[0];
+        replyText = `In Bangalore, **${targetRest.name}** in Malleshwaram is legendary! Famous for golden, butter-crisp Benne Masala Dosa and piping hot filter coffee with a 99% AI match score.`;
+      } else if (lower.includes('kochi') || lower.includes('kerala') || lower.includes('seafood') || lower.includes('karimeen') || lower.includes('fish')) {
+        targetRest = restaurants.find((r) => r.id === 'paragon-restaurant-kochi') || restaurants[0];
+        replyText = `For phenomenal coastal seafood and Malabar delights, **${targetRest.name}** in Kochi is world-renowned. Their Karimeen Pollichathu and short-grain Kaima biryani are unmatched!`;
+      } else if (lower.includes('chennai') || lower.includes('idli') || lower.includes('chettinad') || lower.includes('murugan')) {
+        targetRest = restaurants.find((r) => r.id === 'murugan-idli-shop') || restaurants[0];
+        replyText = `In Chennai, **${targetRest.name}** in T. Nagar serves cloud-like jasmine soft idlis on fresh banana leaves with pure country ghee and 4 signature chutneys.`;
+      } else if (lower.includes('vizag') || lower.includes('visakhapatnam') || lower.includes('andhra') || lower.includes('thali') || lower.includes('gongura')) {
+        targetRest = restaurants.find((r) => r.id === 'dharani-daspalla') || restaurants[0];
+        replyText = `In Visakhapatnam, **${targetRest.name}** delivers the royal authentic 14-item Andhra Bhojanam Thali with fiery gongura pachadi and fragrant ghee podi.`;
+      } else if (lower.includes('romantic') || lower.includes('date') || lower.includes('quiet') || lower.includes('japan')) {
+        targetRest = restaurants.find((r) => r.id === 'kumi-modern-japanese') || restaurants.find((r) => r.id === 'grasshopper-bangalore') || restaurants[0];
+        replyText = `Based on your desire for a quiet, romantic atmosphere with refined dining, I strongly recommend **${targetRest.name}** in ${targetRest.neighborhood}, ${targetRest.city}. It boasts an intimate mood, stellar tasting menu, and low ambient noise.`;
       } else if (lower.includes('biryani') || lower.includes('bawarchi') || lower.includes('spicy')) {
-        targetRest = restaurants.find((r) => r.id === 'bawarchi-restaurant') || restaurants[0];
-        replyText = `For phenomenal dum biryani with family packs and rich spice layers, **${targetRest.name}** at ${targetRest.neighborhood} is the crowd favorite under ₹500!`;
+        targetRest = restaurants.find((r) => r.id === 'bawarchi-restaurant') || restaurants.find((r) => r.id === 'paradise-biryani') || restaurants[0];
+        replyText = `For phenomenal dum biryani with family packs and rich spice layers, **${targetRest.name}** at ${targetRest.neighborhood}, ${targetRest.city} is the crowd favorite!`;
       } else if (lower.includes('coffee') || lower.includes('work') || lower.includes('cafe')) {
-        targetRest = restaurants.find((r) => r.id === 'roastery-coffee-house') || restaurants[0];
-        replyText = `**${targetRest.name}** in Jubilee Hills is ideal! Housed in an airy courtyard with single-origin beans and signature pour-overs.`;
-      } else if (lower.includes('dessert') || lower.includes('bakery') || lower.includes('pastry')) {
-        targetRest = restaurants.find((r) => r.id === 'concu') || restaurants[0];
-        replyText = `You must try **${targetRest.name}**! Their Valrhona molten chocolate fondant and handcrafted choux pastries are unmatched in the city.`;
+        targetRest = restaurants.find((r) => r.id === 'roastery-coffee-house') || restaurants.find((r) => r.id === 'kashi-art-cafe') || restaurants[0];
+        replyText = `**${targetRest.name}** in ${targetRest.city} is ideal! Housed in an airy courtyard with single-origin beans and artisanal roasts.`;
       } else {
         targetRest = restaurants.find((r) => r.id === 'paradise-biryani') || restaurants[0];
-        replyText = `I have analyzed top reviews and menus for "${text}". **${targetRest.name}** stands out with consistent high marks for flavor profile and service excellence.`;
+        replyText = `I have analyzed top regional reviews across South India for "${text}". **${targetRest.name}** in ${targetRest.city} stands out with consistent high marks for flavor profile and hospitality.`;
       }
 
       setMessages((prev) => [

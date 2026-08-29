@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Restaurant } from '../types';
-import { ROME_MAP_IMAGE } from '../data/restaurants';
+import { SOUTH_INDIA_MAP_IMAGE } from '../data/restaurants';
+import { CrowdMeter } from './CrowdMeter';
 
 interface RestaurantDetailScreenProps {
   restaurant: Restaurant;
@@ -88,6 +89,7 @@ export const RestaurantDetailScreen: React.FC<RestaurantDetailScreenProps> = ({
                 <span>{vibe} Vibe</span>
               </span>
             ))}
+            <CrowdMeter restaurant={restaurant} variant="badge" className="bg-white/20 text-white border-white/30 backdrop-blur-md" />
             <span className="font-grotesk text-xs text-[#ffe2da] bg-black/30 px-2.5 py-1 rounded-full">{restaurant.priceRange}</span>
           </div>
 
@@ -130,6 +132,15 @@ export const RestaurantDetailScreen: React.FC<RestaurantDetailScreenProps> = ({
                 </p>
               </div>
             </div>
+          </section>
+
+          {/* Live Crowd Meter Section */}
+          <section>
+            <CrowdMeter
+              restaurant={restaurant}
+              variant="detailed"
+              showHourlyHistogram={true}
+            />
           </section>
 
           {/* Signature Dishes */}
@@ -234,7 +245,7 @@ export const RestaurantDetailScreen: React.FC<RestaurantDetailScreenProps> = ({
           {/* Mini Map */}
           <div className="rounded-2xl overflow-hidden h-48 shadow-lg border-2 border-[#ffded4] relative bg-[#fff5f0]">
             <img 
-              src={restaurant.mapImage || ROME_MAP_IMAGE} 
+              src={restaurant.mapImage || SOUTH_INDIA_MAP_IMAGE} 
               alt="Location map" 
               className="object-cover w-full h-full opacity-90" 
             />

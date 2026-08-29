@@ -2,76 +2,89 @@
 
 @layer base {
   :root {
-    --primary: #ff4500;
-    --primary-container: #ff5e1a;
-    --on-primary: #ffffff;
-    --surface: #fff8f5;
-    --surface-container: #ffece5;
-    --surface-container-low: #fff3ee;
-    --surface-container-high: #ffe3d8;
-    --surface-container-lowest: #ffffff;
-    --on-surface: #1e110d;
-    --on-surface-variant: #523932;
-    --tertiary: #d97706;
-    --tertiary-container: #f59e0b;
-    --tertiary-fixed-dim: #fbbf24;
-    --outline: #9c7368;
-    --outline-variant: #f3c9be;
+    --primary: #e63900;
+    --primary-hover: #cf3300;
+    --primary-light: #fff0eb;
+    --accent-amber: #f59e0b;
+    --accent-green: #16a34a;
+    --canvas: #fcf8f5;
+    --surface: #ffffff;
+    --surface-tint: #fff6f2;
+    --text-primary: #1f130e;
+    --text-secondary: #543b33;
+    --text-muted: #785a50;
+    --border-subtle: #f3ded6;
+    --border-hover: #ffbba6;
   }
 
   body {
-    background-color: #fff9f6;
-    color: #1e110d;
-    font-family: 'Hanken Grotesk', system-ui, -apple-system, sans-serif;
+    background-color: #fdf8f5;
+    color: #1f130e;
+    font-family: 'Plus Jakarta Sans', 'Hanken Grotesk', system-ui, -apple-system, sans-serif;
+    letter-spacing: -0.01em;
   }
 
   h1, h2, h3, h4, .font-serif-display {
-    font-family: 'EB Garamond', Georgia, serif;
+    font-family: 'Playfair Display', 'EB Garamond', Georgia, serif;
+    letter-spacing: -0.02em;
   }
 }
 
 .font-garamond {
-  font-family: 'EB Garamond', Georgia, serif;
+  font-family: 'Playfair Display', 'EB Garamond', Georgia, serif;
 }
 
 .font-grotesk {
-  font-family: 'Hanken Grotesk', system-ui, sans-serif;
+  font-family: 'Plus Jakarta Sans', 'Hanken Grotesk', system-ui, sans-serif;
 }
 
 .ai-border-gradient {
   background: linear-gradient(#ffffff, #ffffff) padding-box,
-              linear-gradient(135deg, #ff4500, #ff9e1f, #fbbf24) border-box;
+              linear-gradient(135deg, #ff4500, #ff8c00, #f59e0b) border-box;
   border: 2px solid transparent;
 }
 
 .ai-border-gradient-cream {
-  background: linear-gradient(#fff9f6, #fff9f6) padding-box,
-              linear-gradient(135deg, #ff4500, #ff9e1f, #fbbf24) border-box;
+  background: linear-gradient(#fdf8f5, #fdf8f5) padding-box,
+              linear-gradient(135deg, #ff4500, #ff8c00, #f59e0b) border-box;
   border: 2px solid transparent;
 }
 
 .vibrant-gradient-primary {
-  background: linear-gradient(135deg, #ff4500 0%, #e63900 50%, #d82b00 100%);
+  background: linear-gradient(135deg, #ff4500 0%, #e63900 55%, #c82e00 100%);
 }
 
 .vibrant-gradient-sunset {
-  background: linear-gradient(135deg, #ff4500 0%, #ff781f 50%, #fbbf24 100%);
+  background: linear-gradient(135deg, #ff4500 0%, #ff781f 50%, #f59e0b 100%);
 }
 
 .vibrant-gradient-badge {
-  background: linear-gradient(135deg, #ff3800 0%, #ff8000 100%);
+  background: linear-gradient(135deg, #ff3800 0%, #f97316 100%);
+}
+
+.food-glow {
+  box-shadow: 0 12px 36px -4px rgba(230, 57, 0, 0.18), 0 4px 16px -2px rgba(40, 20, 15, 0.08);
 }
 
 .soft-card-shadow {
-  box-shadow: 0px 10px 30px rgba(255, 69, 0, 0.06), 0px 4px 12px rgba(30, 17, 13, 0.04);
+  box-shadow: 0 8px 24px -2px rgba(220, 50, 0, 0.05), 0 2px 8px -1px rgba(35, 18, 14, 0.04);
+}
+
+.food-card-hover {
+  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.food-card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px -4px rgba(230, 57, 0, 0.12), 0 6px 16px -2px rgba(35, 18, 14, 0.06);
 }
 
 .glow-vibrant {
-  box-shadow: 0 0 30px rgba(255, 69, 0, 0.25);
+  box-shadow: 0 0 30px rgba(255, 69, 0, 0.22);
 }
 
 .glow-subtle {
-  box-shadow: 0 0 20px rgba(255, 69, 0, 0.15);
+  box-shadow: 0 0 20px rgba(255, 69, 0, 0.12);
 }
 
 .material-symbols-outlined {
