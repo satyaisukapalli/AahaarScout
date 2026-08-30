@@ -7,6 +7,7 @@ interface TonightPickScreenProps {
   onNavigate: (s: ScreenType) => void;
   onBookTable: (r: Restaurant) => void;
   onSelectRestaurant: (r: Restaurant) => void;
+  isVegOnly?: boolean;
 }
 
 export const TonightPickScreen: React.FC<TonightPickScreenProps> = ({
@@ -14,6 +15,7 @@ export const TonightPickScreen: React.FC<TonightPickScreenProps> = ({
   onNavigate,
   onBookTable,
   onSelectRestaurant,
+  isVegOnly = false,
 }) => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
 
@@ -107,10 +109,14 @@ export const TonightPickScreen: React.FC<TonightPickScreenProps> = ({
         <canvas ref={canvasRef} className="absolute inset-0 w-full h-full pointer-events-none z-10" />
 
         <div className="relative z-20 flex flex-col items-center text-center px-6 mt-auto pb-12">
-          <div className="mb-4 inline-flex items-center gap-2 bg-gradient-to-r from-[#ff4500]/90 to-[#ff8c00]/90 backdrop-blur-md border border-white/40 px-5 py-2 rounded-full shadow-xl">
-            <span className="text-xl">✨</span>
+          <div className={`mb-4 inline-flex items-center gap-2 backdrop-blur-md border px-5 py-2 rounded-full shadow-xl ${
+            isVegOnly
+              ? 'bg-gradient-to-r from-emerald-600/90 to-green-600/90 border-emerald-300/40 text-white'
+              : 'bg-gradient-to-r from-[#ff4500]/90 to-[#ff8c00]/90 border-white/40 text-white'
+          }`}>
+            <span className="text-xl">{isVegOnly ? '🌱' : '✨'}</span>
             <span className="font-grotesk text-xs font-bold text-white tracking-widest uppercase">
-              Tonight's Curated Pick
+              {isVegOnly ? "Tonight's Pure-Veg Masterpiece" : "Tonight's Curated Pick"}
             </span>
           </div>
 

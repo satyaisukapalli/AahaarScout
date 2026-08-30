@@ -1,6 +1,6 @@
 {
-  "name": "Aahaarscout",
-  "description": "AI-powered food and restaurant discovery platform. Find top dishes, trending dining spots, and curated recommendations tailored to your cravings.",
+  "name": "AaharScout",
+  "description": "AaharScout — Find what to eat, not just where to eat. AI food decision engine recommending dishes by craving, budget, mood, and location.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

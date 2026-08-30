@@ -1,13 +1,23 @@
 import React, { useState } from 'react';
-import { Restaurant } from '../types';
+import { Restaurant, DishReview, DishReviewReply, AuthUser, HashtagBadge } from '../types';
 import { SOUTH_INDIA_MAP_IMAGE } from '../data/restaurants';
 import { CrowdMeter } from './CrowdMeter';
+import { GoogleMapView } from './GoogleMapView';
+import { DishReviewSection } from './DishReviewSection';
 
 interface RestaurantDetailScreenProps {
   restaurant: Restaurant;
   onBookTable: (r: Restaurant) => void;
   onToggleSave: (r: Restaurant) => void;
   isSaved: boolean;
+  isVegOnly?: boolean;
+  reviews?: DishReview[];
+  onAddReview?: (review: DishReview, newHashtags: HashtagBadge[]) => void;
+  onAddReply?: (reviewId: string, reply: DishReviewReply) => void;
+  onLikeReview?: (reviewId: string) => void;
+  onLikeReply?: (reviewId: string, replyId: string) => void;
+  authUser?: AuthUser | null;
+  onOpenAuth?: () => void;
 }
 
 export const RestaurantDetailScreen: React.FC<RestaurantDetailScreenProps> = ({
@@ -15,6 +25,14 @@ export const RestaurantDetailScreen: React.FC<RestaurantDetailScreenProps> = ({
   onBookTable,
   onToggleSave,
   isSaved,
+  isVegOnly = false,
+  reviews = [],
+  onAddReview = () => {},
+  onAddReply = () => {},
+  onLikeReview = () => {},
+  onLikeReply = () => {},
+  authUser,
+  onOpenAuth,
 }) => {
   const [copiedToast, setCopiedToast] = useState(false);
 
@@ -145,37 +163,80 @@ export const RestaurantDetailScreen: React.FC<RestaurantDetailScreenProps> = ({
 
           {/* Signature Dishes */}
           <section>
-            <h2 className="font-garamond text-2xl sm:text-3xl font-semibold text-[#1e110d] mb-5">
-              Signature Dishes
-            </h2>
+            <div className="flex items-center justify-between mb-5">
+              <h2 className="font-garamond text-2xl sm:text-3xl font-semibold text-[#1e110d]">
+                Signature Dishes
+              </h2>
+              <span className="text-xs font-grotesk text-[#523932] font-medium">
+                Tap any dish to view genuine critiques & ratings
+              </span>
+            </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-              {(restaurant.signatureDishes || []).map((dish) => (
-                <div key={dish.id} className="bg-white rounded-2xl overflow-hidden soft-card-shadow border border-[#ffded4] hover:border-[#ff9e7d] transition-all flex flex-col group">
-                  <div className="h-40 w-full relative bg-[#ffece5]">
-                    <img src={dish.image} alt={dish.name} className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" />
-                    <div className="absolute top-2.5 right-2.5 bg-gradient-to-r from-[#ff4500] to-[#ff8c00] text-white font-grotesk text-[11px] font-bold px-2.5 py-1 rounded-full flex items-center gap-1 shadow-md">
-                      <span className="material-symbols-outlined text-xs material-symbols-fill">auto_awesome</span>
-                      {dish.matchScore}% Match
+              {(restaurant.signatureDishes || []).map((dish) => {
+                const dishRevs = reviews.filter((r) => r.dishId === dish.id && r.restaurantId === restaurant.id);
+                const dishAvg = dishRevs.length > 0
+                  ? (dishRevs.reduce((a, c) => a + c.rating, 0) / dishRevs.length).toFixed(1)
+                  : '5.0';
+
+                return (
+                  <div key={dish.id} className="bg-white rounded-2xl overflow-hidden soft-card-shadow border border-[#ffded4] hover:border-[#ff9e7d] transition-all flex flex-col group">
+                    <div className="h-40 w-full relative bg-[#ffece5]">
+                      <img src={dish.image} alt={dish.name} className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" />
+                      <div className="absolute top-2.5 right-2.5 bg-gradient-to-r from-[#ff4500] to-[#ff8c00] text-white font-grotesk text-[11px] font-bold px-2.5 py-1 rounded-full flex items-center gap-1 shadow-md">
+                        <span className="material-symbols-outlined text-xs material-symbols-fill">auto_awesome</span>
+                        {dish.matchScore}% Match
+                      </div>
+
+                      {/* Dish Rating Chip */}
+                      <div className="absolute bottom-2.5 left-2.5 bg-[#1e110d]/90 backdrop-blur-xs text-white font-grotesk text-[11px] font-bold px-2.5 py-1 rounded-lg flex items-center gap-1 shadow-md">
+                        <span className="material-symbols-outlined text-xs text-amber-400 material-symbols-fill">star</span>
+                        <span>{dishAvg}</span>
+                        {dishRevs.length > 0 && (
+                          <span className="text-white/70 font-normal">({dishRevs.length})</span>
+                        )}
+                      </div>
+                    </div>
+                    <div className="p-4 flex-grow flex flex-col justify-between">
+                      <div>
+                        <h4 className="font-garamond text-lg font-bold text-[#1e110d] group-hover:text-[#ff4500] transition-colors mb-1">
+                          {dish.name}
+                        </h4>
+                        <p className="font-grotesk text-xs text-[#523932] leading-relaxed line-clamp-2">
+                          {dish.description}
+                        </p>
+                      </div>
+                      <div className="mt-3 pt-2 border-t border-[#ffded4] flex items-center justify-between font-grotesk">
+                        <span className="text-sm font-bold text-[#ff4500]">{dish.price}</span>
+                        <a
+                          href="#dish-reviews-section"
+                          className="text-[11px] font-bold text-[#ff4500] hover:underline flex items-center gap-0.5"
+                        >
+                          <span>Reviews</span>
+                          <span className="material-symbols-outlined text-[13px]">arrow_downward</span>
+                        </a>
+                      </div>
                     </div>
                   </div>
-                  <div className="p-4 flex-grow flex flex-col justify-between">
-                    <div>
-                      <h4 className="font-garamond text-lg font-bold text-[#1e110d] group-hover:text-[#ff4500] transition-colors mb-1">
-                        {dish.name}
-                      </h4>
-                      <p className="font-grotesk text-xs text-[#523932] leading-relaxed line-clamp-2">
-                        {dish.description}
-                      </p>
-                    </div>
-                    <div className="mt-3 pt-2 border-t border-[#ffded4] font-grotesk text-sm font-bold text-[#ff4500]">
-                      {dish.price}
-                    </div>
-                  </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </section>
+
+          {/* Dedicated Food Item Reviews & Ratings Section */}
+          <div id="dish-reviews-section">
+            <DishReviewSection
+              restaurant={restaurant}
+              reviews={reviews}
+              onAddReview={onAddReview}
+              onAddReply={onAddReply}
+              onLikeReview={onLikeReview}
+              onLikeReply={onLikeReply}
+              authUser={authUser}
+              onOpenAuth={onOpenAuth}
+              isVegOnly={isVegOnly}
+            />
+          </div>
         </div>
 
         {/* Right Column / Actions Sidebar */}
@@ -242,19 +303,27 @@ export const RestaurantDetailScreen: React.FC<RestaurantDetailScreenProps> = ({
             </div>
           </div>
 
-          {/* Mini Map */}
-          <div className="rounded-2xl overflow-hidden h-48 shadow-lg border-2 border-[#ffded4] relative bg-[#fff5f0]">
-            <img 
-              src={restaurant.mapImage || SOUTH_INDIA_MAP_IMAGE} 
-              alt="Location map" 
-              className="object-cover w-full h-full opacity-90" 
+          {/* Interactive Google Map & Location */}
+          <div className="flex flex-col gap-2.5">
+            <GoogleMapView
+              restaurants={[restaurant]}
+              selectedRestaurant={restaurant}
+              city={restaurant.city}
+              isVegOnly={isVegOnly}
+              className="h-56 w-full"
             />
-            <div className="absolute inset-0 bg-[#1e110d]/15 flex items-center justify-center">
-              <div className="bg-gradient-to-r from-[#ff4500] to-[#ff8c00] text-white px-3.5 py-1.5 rounded-full shadow-lg text-xs font-grotesk font-bold flex items-center gap-1.5">
-                <span className="material-symbols-outlined text-sm">pin_drop</span>
-                {restaurant.neighborhood}
-              </div>
-            </div>
+
+            <a
+              href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+                `${restaurant.name} ${restaurant.neighborhood} ${restaurant.city}`
+              )}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-gradient-to-r from-[#ff4500] to-[#ff781f] text-white font-grotesk text-xs font-bold shadow-sm hover:shadow-md transition-all active:scale-98 cursor-pointer text-center"
+            >
+              <span className="material-symbols-outlined text-sm">directions</span>
+              <span>Open in Google Maps / Get Directions</span>
+            </a>
           </div>
         </div>
       </div>

@@ -25,11 +25,10 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         </div>
 
         <div className="flex flex-wrap justify-center gap-6 text-sm font-grotesk text-[#5c4038]">
-          <button onClick={() => onNavigate?.('home')} className="hover:text-[#ad2c00] underline transition-colors cursor-pointer">About</button>
-          <button onClick={() => onNavigate?.('home')} className="hover:text-[#ad2c00] underline transition-colors cursor-pointer">Press</button>
-          <button onClick={() => onNavigate?.('home')} className="hover:text-[#ad2c00] underline transition-colors cursor-pointer">Contact</button>
-          <button onClick={() => onNavigate?.('home')} className="hover:text-[#ad2c00] underline transition-colors cursor-pointer">Privacy</button>
-          <button onClick={() => onNavigate?.('home')} className="hover:text-[#ad2c00] underline transition-colors cursor-pointer">Terms</button>
+          <button onClick={() => onNavigate?.('home')} className="hover:text-[#ad2c00] transition-colors cursor-pointer">Discover</button>
+          <button onClick={() => onNavigate?.('forum')} className="hover:text-[#ad2c00] font-bold transition-colors cursor-pointer">Foodie Forum & Memes</button>
+          <button onClick={() => onNavigate?.('collections')} className="hover:text-[#ad2c00] transition-colors cursor-pointer">Curated Trails</button>
+          <button onClick={() => onNavigate?.('ai-assistant')} className="hover:text-[#ad2c00] transition-colors cursor-pointer">FoodieBot AI</button>
         </div>
 
         <div className="text-[#5c4038] font-grotesk text-xs sm:text-sm text-center md:text-right">

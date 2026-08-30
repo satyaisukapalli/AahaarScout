@@ -342,6 +342,141 @@ export const RESTAURANTS: Restaurant[] = [
     isVeg: false,
     isPureVeg: false
   },
+  {
+    id: 'shah-ghouse-cafe',
+    name: 'Shah Ghouse Cafe & Restaurant',
+    cuisine: 'Mughlai • Authentic Hyderabadi Biryani',
+    neighborhood: 'Tolichowki / Charminar',
+    city: 'Hyderabad',
+    rating: 4.8,
+    reviewsCount: 34200,
+    priceRange: '$$',
+    priceForTwo: '₹480 for two',
+    distance: '3.9 km',
+    matchScore: 97,
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDf6EsMkuk84g_5EPYKRo6ZG-sz_lvsN4pzNG9RRC3s11lJA2pSJ6jSf6_fnB8JMpGACPifHHoa4dVuo90RUewAehsl0LUCOFLt-YS4V3EMAPcPfZ7_pfwRs2GRBH6r65LAeobsQrOanTvmEJBk6Iyd0Xr_CnK7TcP1H9v_2ovvQH11sFktxuTnbpHu4UC7CqSWi7Yr9e3hYSNo9FbLTkp0k3PXjXQZtzY4ozIIIh0TZe_P8qCTAXeTAQ',
+    tags: ['Mutton Biryani', 'Tangdi Kebab', 'Irani Chai', 'Late Night', 'Legendary'],
+    vibe: 'Lively',
+    vibes: ['Lively', 'Casual'],
+    mustTry: 'Special Mutton Dum Biryani, Tangdi Kebab, Irani Chai with Osmania Biscuits',
+    aiReasoning: 'A buzzing Hyderabadi culinary Mecca famed for deep, intensely spiced mutton dum biryani and 24/7 simmering creamy Irani chai.',
+    aiInsight: 'The late-night food lover’s haven in Tolichowki, celebrated for rich aromatic ghee rice and succulent slow-braised meat.',
+    signatureDishes: [
+      {
+        id: 'sg-1',
+        name: 'Shah Ghouse Special Mutton Dum Biryani',
+        description: 'Tender baby goat pieces layered with long-grain aged basmati rice, caramelized onions, saffron milk and whole aromatic spices.',
+        price: '₹320',
+        matchScore: 98,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDf6EsMkuk84g_5EPYKRo6ZG-sz_lvsN4pzNG9RRC3s11lJA2pSJ6jSf6_fnB8JMpGACPifHHoa4dVuo90RUewAehsl0LUCOFLt-YS4V3EMAPcPfZ7_pfwRs2GRBH6r65LAeobsQrOanTvmEJBk6Iyd0Xr_CnK7TcP1H9v_2ovvQH11sFktxuTnbpHu4UC7CqSWi7Yr9e3hYSNo9FbLTkp0k3PXjXQZtzY4ozIIIh0TZe_P8qCTAXeTAQ'
+      },
+      {
+        id: 'sg-2',
+        name: 'Charcoal Grilled Tangdi Kebab',
+        description: 'Chicken drumsticks marinated in hung curd, ginger garlic paste, green chili essence and roasted over smoky open coals.',
+        price: '₹260',
+        matchScore: 96,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCp_SfwVODp3oDSv97exBU9aXRisDCpbE8JVk5Y6OmcIpsiuDK9EnEB-dhEbq6bxZe9fy-X8YynvuuyNZqrLl-V64qVlUKe6lDX6L0ao1XTVhxkBONB0cz4y4YVNixIBEPp7HXKSjjnr012etDr9SamZ1Mw_Tldd2g1dRt4Bgr70VnRKdZqI0sPpOIa-_65hthlP2SNYrekzb0WacTMNXHdJITvzyTcQwqSIlKqlxIHAXb2B7M6pu1aCA'
+      }
+    ],
+    phone: '(040) 6461-7789',
+    website: 'shahghouse.in',
+    hours: '11:00 AM - 1:30 AM',
+    address: 'Near Tolichowki Flyover, Hyderabad',
+    mapImage: HYDERABAD_MAP_IMAGE,
+    isVeg: false,
+    isPureVeg: false
+  },
+  {
+    id: 'minerva-coffee-shop-hyderabad',
+    name: 'Minerva Coffee Shop',
+    cuisine: 'South Indian • 100% Pure Veg Heritage Tiffins',
+    neighborhood: 'Himayatnagar',
+    city: 'Hyderabad',
+    rating: 4.8,
+    reviewsCount: 16500,
+    priceRange: '$$',
+    priceForTwo: '₹420 for two',
+    distance: '2.8 km',
+    matchScore: 98,
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBwui69H2nqjfTLgjmnr4hgF3_fd2owLCO6kipXwZIXuD1IvjXPmQQCVCQOQmNgZ8dBioAq_TmZq6jSWUc3pA3hAWpmqPfAbyNDzpLNed2H_Migk6IuTn0LY_y7x4nO0uXLFFR8uH9Kpj64sT1i3yt6Vrlwv8QKsyeQ0XDxX859Iv34ai-zi7rs-qp6uviHFDE4Dxj_djw-fA04RKrm8bzFtzNGK3cCiPF00WwYc_U_ps-DlDDx2KWkFQ',
+    tags: ['Pure Veg', 'MLA Pesarattu', 'Button Idli', 'Filter Coffee', 'Heritage'],
+    vibe: 'Casual',
+    vibes: ['Casual', 'Family'],
+    mustTry: 'Special MLA Pesarattu with Upma, Button Sambar Idli, Degree Filter Coffee',
+    aiReasoning: 'Four decades of pure vegetarian mastery in Himayatnagar, famed for its crisp green gram MLA Pesarattu and piping hot sambar.',
+    aiInsight: 'An elite breakfast institution where generations of Hyderabad families convene for authentic Andhra morning tiffins.',
+    signatureDishes: [
+      {
+        id: 'mcs-1',
+        name: 'Special MLA Pesarattu with Upma',
+        description: 'Whole green gram crepe golden griddled with pure ghee, stuffed with creamy spiced upma and served with ginger (allam) pachadi.',
+        price: '₹145',
+        matchScore: 99,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBwui69H2nqjfTLgjmnr4hgF3_fd2owLCO6kipXwZIXuD1IvjXPmQQCVCQOQmNgZ8dBioAq_TmZq6jSWUc3pA3hAWpmqPfAbyNDzpLNed2H_Migk6IuTn0LY_y7x4nO0uXLFFR8uH9Kpj64sT1i3yt6Vrlwv8QKsyeQ0XDxX859Iv34ai-zi7rs-qp6uviHFDE4Dxj_djw-fA04RKrm8bzFtzNGK3cCiPF00WwYc_U_ps-DlDDx2KWkFQ'
+      },
+      {
+        id: 'mcs-2',
+        name: 'Ghee Button Sambar Idli Bowl',
+        description: 'Mini bite-sized steamed idlis submerged in aromatic shallot-drumstick sambar with a generous drizzle of hot pure ghee.',
+        price: '₹120',
+        matchScore: 97,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBwui69H2nqjfTLgjmnr4hgF3_fd2owLCO6kipXwZIXuD1IvjXPmQQCVCQOQmNgZ8dBioAq_TmZq6jSWUc3pA3hAWpmqPfAbyNDzpLNed2H_Migk6IuTn0LY_y7x4nO0uXLFFR8uH9Kpj64sT1i3yt6Vrlwv8QKsyeQ0XDxX859Iv34ai-zi7rs-qp6uviHFDE4Dxj_djw-fA04RKrm8bzFtzNGK3cCiPF00WwYc_U_ps-DlDDx2KWkFQ'
+      }
+    ],
+    phone: '(040) 2322-8845',
+    website: 'minervacoffeeshop.in',
+    hours: '7:00 AM - 10:30 PM',
+    address: 'Amrutha Mall, Himayatnagar, Hyderabad',
+    mapImage: HYDERABAD_MAP_IMAGE,
+    isVeg: true,
+    isPureVeg: true
+  },
+  {
+    id: 'ulavacharu-restaurant',
+    name: 'Ulavacharu Teluginti Ruchi',
+    cuisine: 'Authentic Telugu & Coastal Andhra • Royal Flavors',
+    neighborhood: 'Jubilee Hills',
+    city: 'Hyderabad',
+    rating: 4.8,
+    reviewsCount: 17200,
+    priceRange: '$$$',
+    priceForTwo: '₹1,100 for two',
+    distance: '3.4 km',
+    matchScore: 98,
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCp_SfwVODp3oDSv97exBU9aXRisDCpbE8JVk5Y6OmcIpsiuDK9EnEB-dhEbq6bxZe9fy-X8YynvuuyNZqrLl-V64qVlUKe6lDX6L0ao1XTVhxkBONB0cz4y4YVNixIBEPp7HXKSjjnr012etDr9SamZ1Mw_Tldd2g1dRt4Bgr70VnRKdZqI0sPpOIa-_65hthlP2SNYrekzb0WacTMNXHdJITvzyTcQwqSIlKqlxIHAXb2B7M6pu1aCA',
+    tags: ['Raju Gari Kodi Pulao', 'Ulavacharu Biryani', 'Avakaya', 'Spicy Andhra', 'Family'],
+    vibe: 'Lively',
+    vibes: ['Lively', 'Casual', 'Family'],
+    mustTry: 'Raju Gari Kodi Pulao, Ulavacharu Chicken Dum Biryani, Avakaya Pappu Annam',
+    aiReasoning: 'The pioneer of traditional Andhra culinary heritage in upscale Jubilee Hills, bringing authentic horsegram (ulavacharu) and Kshatriya-style village pulaos to life.',
+    aiInsight: 'The definitive destination for spicy Godavari and Rayalaseema home-style delicacies served with regal hospitality.',
+    signatureDishes: [
+      {
+        id: 'ur-1',
+        name: 'Signature Raju Gari Kodi Pulao',
+        description: 'Tender country chicken tossed in secret Kshatriya spice blend and slow-steamed with fragrant seeraga samba rice and roasted cashews.',
+        price: '₹395',
+        matchScore: 99,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCp_SfwVODp3oDSv97exBU9aXRisDCpbE8JVk5Y6OmcIpsiuDK9EnEB-dhEbq6bxZe9fy-X8YynvuuyNZqrLl-V64qVlUKe6lDX6L0ao1XTVhxkBONB0cz4y4YVNixIBEPp7HXKSjjnr012etDr9SamZ1Mw_Tldd2g1dRt4Bgr70VnRKdZqI0sPpOIa-_65hthlP2SNYrekzb0WacTMNXHdJITvzyTcQwqSIlKqlxIHAXb2B7M6pu1aCA'
+      },
+      {
+        id: 'ur-2',
+        name: 'Ulavacharu Mutton Dum Biryani',
+        description: 'Slow-simmered rich horse gram reduction cooked with aged basmati rice, tender mutton cuts, fresh mint, and pure desi ghee.',
+        price: '₹425',
+        matchScore: 97,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDf6EsMkuk84g_5EPYKRo6ZG-sz_lvsN4pzNG9RRC3s11lJA2pSJ6jSf6_fnB8JMpGACPifHHoa4dVuo90RUewAehsl0LUCOFLt-YS4V3EMAPcPfZ7_pfwRs2GRBH6r65LAeobsQrOanTvmEJBk6Iyd0Xr_CnK7TcP1H9v_2ovvQH11sFktxuTnbpHu4UC7CqSWi7Yr9e3hYSNo9FbLTkp0k3PXjXQZtzY4ozIIIh0TZe_P8qCTAXeTAQ'
+      }
+    ],
+    phone: '(040) 2355-6677',
+    website: 'ulavacharurestaurant.com',
+    hours: '12:00 PM - 4:00 PM, 7:00 PM - 11:30 PM',
+    address: 'Road No. 36, Jubilee Hills, Hyderabad',
+    mapImage: HYDERABAD_MAP_IMAGE,
+    isVeg: false,
+    isPureVeg: false
+  },
 
   // --- BANGALORE (Karnataka) ---
   {
@@ -529,6 +664,141 @@ export const RESTAURANTS: Restaurant[] = [
     isVeg: true,
     isPureVeg: false
   },
+  {
+    id: 'brahmins-coffee-bar',
+    name: 'Brahmin\'s Coffee Bar',
+    cuisine: 'South Indian • 100% Pure Veg Heritage Tiffins',
+    neighborhood: 'Shankarapuram / Basavanagudi',
+    city: 'Bangalore',
+    rating: 4.9,
+    reviewsCount: 28900,
+    priceRange: '$',
+    priceForTwo: '₹180 for two',
+    distance: '3.6 km',
+    matchScore: 99,
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBwui69H2nqjfTLgjmnr4hgF3_fd2owLCO6kipXwZIXuD1IvjXPmQQCVCQOQmNgZ8dBioAq_TmZq6jSWUc3pA3hAWpmqPfAbyNDzpLNed2H_Migk6IuTn0LY_y7x4nO0uXLFFR8uH9Kpj64sT1i3yt6Vrlwv8QKsyeQ0XDxX859Iv34ai-zi7rs-qp6uviHFDE4Dxj_djw-fA04RKrm8bzFtzNGK3cCiPF00WwYc_U_ps-DlDDx2KWkFQ',
+    tags: ['Pure Veg', 'Steamed Idli', 'Crispy Vada', 'Coconut Chutney', 'Filter Coffee', 'Legendary'],
+    vibe: 'Lively',
+    vibes: ['Lively', 'Casual'],
+    mustTry: 'Melt-in-mouth Steamed Idlis, Crispy Medu Vada, Free-flowing Coconut Chutney, Filter Coffee',
+    aiReasoning: 'Founded in 1965, this standing-only Bangalore breakfast shrine serves cloud-soft idlis drenched in infinite servings of fragrant, thick minty coconut chutney.',
+    aiInsight: 'An unforgettable South Bangalore breakfast ritual known for unpretentious purity, blazing speed, and rich chicory-brewed filter coffee.',
+    signatureDishes: [
+      {
+        id: 'bcb-1',
+        name: 'Classic Idli & Crispy Vada Combo',
+        description: 'Pair of featherweight steamed rice cakes and deep-fried golden lentil donut served swimming in fresh chilled coconut chutney.',
+        price: '₹70',
+        matchScore: 99,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBwui69H2nqjfTLgjmnr4hgF3_fd2owLCO6kipXwZIXuD1IvjXPmQQCVCQOQmNgZ8dBioAq_TmZq6jSWUc3pA3hAWpmqPfAbyNDzpLNed2H_Migk6IuTn0LY_y7x4nO0uXLFFR8uH9Kpj64sT1i3yt6Vrlwv8QKsyeQ0XDxX859Iv34ai-zi7rs-qp6uviHFDE4Dxj_djw-fA04RKrm8bzFtzNGK3cCiPF00WwYc_U_ps-DlDDx2KWkFQ'
+      },
+      {
+        id: 'bcb-2',
+        name: 'Hot Kesari Bath',
+        description: 'Fragrant semolina pudding slow roasted with pure desi cow ghee, saffron essence, cardamom, raisins and golden cashew nuts.',
+        price: '₹45',
+        matchScore: 97,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA_tMNke_20iyzpQ3PaLGJDdf3whV_ifW8H3mqwUgeb1xtNan5iEV-rO9kIVorRgI9-quF9ti_gPNY1lbkch7x1jbs8J9yW-usIewNEbXHa2VnI0T1HVZy4LU5X4-nb9lPVx7FI0SMyA8OujN7itgGnNbv6LGN8DQpHYm0geVXWDbB0qLPRQhACkT9gUorn0sslPLeNKWMmiQFfwpkcuPSMIw9RSuPPqPkm2hYCFIiZ-RQymlOM551t9Q'
+      }
+    ],
+    phone: '(080) 2660-8488',
+    website: 'brahminscoffeebar.com',
+    hours: '6:00 AM - 12:00 PM, 3:00 PM - 7:00 PM (Closed Sunday)',
+    address: 'Near Shankar Math, Ranga Rao Road, Shankarapuram, Bangalore',
+    mapImage: SOUTH_INDIA_MAP_IMAGE,
+    isVeg: true,
+    isPureVeg: true
+  },
+  {
+    id: 'nagarjuna-andhra-meals',
+    name: 'Nagarjuna Restaurant',
+    cuisine: 'Authentic Andhra • Unlimited Banana Leaf Meals',
+    neighborhood: 'Residency Road / Central Bangalore',
+    city: 'Bangalore',
+    rating: 4.8,
+    reviewsCount: 32400,
+    priceRange: '$$',
+    priceForTwo: '₹750 for two',
+    distance: '2.5 km',
+    matchScore: 98,
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBwlAvJp7sw8u4dpcwahZayRcygGCqTRyyo4oWTayr8GjPcS8JcMPDJL5994oBB3Wxlm0T-itPoZm7YCVnTG1UPhhDTTIBSS42ogp9lVZcRwzqYALEdPMVGOzNqOr0RKe-q-y4-LSmEfpa1dJMfRLXZjkR7WhgD7vPK5_Rn12aqWbNgDqC9vQB1uA7FVQuELkHGvgOZN0j7ZdJetBuXp43Nytk2zBF19oyYesA_BuAlHPIl2zQ2lkNjvA',
+    tags: ['Andhra Meals', 'Chilli Chicken', 'Gunpowder Ghee', 'Spicy', 'Legendary'],
+    vibe: 'Lively',
+    vibes: ['Lively', 'Casual', 'Family'],
+    mustTry: 'Unlimited Andhra Meals on Banana Leaf, Nagarjuna Andhra Chilli Chicken, Sholay Kebab',
+    aiReasoning: 'Serving since 1984, Nagarjuna is Bangalore’s premier Andhra dining experience, famed for its piping hot rice with gun powder (kandi podi), pure melted ghee, and fiery green chilli chicken.',
+    aiInsight: 'The holy grail of spicy Andhra lunch banquets in the heart of Bengaluru.',
+    signatureDishes: [
+      {
+        id: 'nag-1',
+        name: 'Nagarjuna Fiery Green Chilli Chicken',
+        description: 'Tender chicken tossed with fiery green chillies, curry leaves, and secret Andhra aromatic masala.',
+        price: '₹340',
+        matchScore: 99,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCp_SfwVODp3oDSv97exBU9aXRisDCpbE8JVk5Y6OmcIpsiuDK9EnEB-dhEbq6bxZe9fy-X8YynvuuyNZqrLl-V64qVlUKe6lDX6L0ao1XTVhxkBONB0cz4y4YVNixIBEPp7HXKSjjnr012etDr9SamZ1Mw_Tldd2g1dRt4Bgr70VnRKdZqI0sPpOIa-_65hthlP2SNYrekzb0WacTMNXHdJITvzyTcQwqSIlKqlxIHAXb2B7M6pu1aCA'
+      },
+      {
+        id: 'nag-2',
+        name: 'Grand Andhra Banana Leaf Meal',
+        description: 'Unlimited feast with hot Sona Masoori rice, melted cow ghee, Kandi Podi, Gongura chutney, Andhra pappu, sambar, rasam, and buttermilk.',
+        price: '₹280',
+        matchScore: 98,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBwui69H2nqjfTLgjmnr4hgF3_fd2owLCO6kipXwZIXuD1IvjXPmQQCVCQOQmNgZ8dBioAq_TmZq6jSWUc3pA3hAWpmqPfAbyNDzpLNed2H_Migk6IuTn0LY_y7x4nO0uXLFFR8uH9Kpj64sT1i3yt6Vrlwv8QKsyeQ0XDxX859Iv34ai-zi7rs-qp6uviHFDE4Dxj_djw-fA04RKrm8bzFtzNGK3cCiPF00WwYc_U_ps-DlDDx2KWkFQ'
+      }
+    ],
+    phone: '(080) 4111-2222',
+    website: 'nagarjunarestaurants.com',
+    hours: '12:00 PM - 3:45 PM, 7:00 PM - 10:45 PM',
+    address: '44/1 Residency Road, Bangalore',
+    mapImage: SOUTH_INDIA_MAP_IMAGE,
+    isVeg: false,
+    isPureVeg: false
+  },
+  {
+    id: 'meghana-foods-bangalore',
+    name: 'Meghana Foods',
+    cuisine: 'Andhra Style • Biryani & Spicy Curries',
+    neighborhood: 'Koramangala 5th Block',
+    city: 'Bangalore',
+    rating: 4.8,
+    reviewsCount: 38700,
+    priceRange: '$$',
+    priceForTwo: '₹600 for two',
+    distance: '3.1 km',
+    matchScore: 98,
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDf6EsMkuk84g_5EPYKRo6ZG-sz_lvsN4pzNG9RRC3s11lJA2pSJ6jSf6_fnB8JMpGACPifHHoa4dVuo90RUewAehsl0LUCOFLt-YS4V3EMAPcPfZ7_pfwRs2GRBH6r65LAeobsQrOanTvmEJBk6Iyd0Xr_CnK7TcP1H9v_2ovvQH11sFktxuTnbpHu4UC7CqSWi7Yr9e3hYSNo9FbLTkp0k3PXjXQZtzY4ozIIIh0TZe_P8qCTAXeTAQ',
+    tags: ['Meghana Biryani', 'Boneless Chicken', 'Paneer 65 Biryani', 'Spicy', 'Student Favorite'],
+    vibe: 'Lively',
+    vibes: ['Lively', 'Casual'],
+    mustTry: 'Meghana Special Boneless Chicken Biryani, Paneer Biryani, Lemon Chicken',
+    aiReasoning: 'A Bengaluru cult classic known for intensely flavorful Andhra spice-layered rice topped with crispy marinated meat and thick aromatic gravy.',
+    aiInsight: 'The top-ordered biryani across Bangalore tech parks and college campuses for fiery satisfaction.',
+    signatureDishes: [
+      {
+        id: 'meg-1',
+        name: 'Meghana Special Boneless Chicken Biryani',
+        description: 'Flavorful spiced basmati rice layered with fiery Andhra chicken 65 fillets and rich onion-tomato masala.',
+        price: '₹330',
+        matchScore: 99,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDf6EsMkuk84g_5EPYKRo6ZG-sz_lvsN4pzNG9RRC3s11lJA2pSJ6jSf6_fnB8JMpGACPifHHoa4dVuo90RUewAehsl0LUCOFLt-YS4V3EMAPcPfZ7_pfwRs2GRBH6r65LAeobsQrOanTvmEJBk6Iyd0Xr_CnK7TcP1H9v_2ovvQH11sFktxuTnbpHu4UC7CqSWi7Yr9e3hYSNo9FbLTkp0k3PXjXQZtzY4ozIIIh0TZe_P8qCTAXeTAQ'
+      },
+      {
+        id: 'meg-2',
+        name: 'Meghana Special Paneer 65 Biryani',
+        description: 'Crisp marinated cottage cheese cubes tossed in spicy Andhra herbs layered with aromatic ghee basmati rice.',
+        price: '₹290',
+        matchScore: 97,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBwui69H2nqjfTLgjmnr4hgF3_fd2owLCO6kipXwZIXuD1IvjXPmQQCVCQOQmNgZ8dBioAq_TmZq6jSWUc3pA3hAWpmqPfAbyNDzpLNed2H_Migk6IuTn0LY_y7x4nO0uXLFFR8uH9Kpj64sT1i3yt6Vrlwv8QKsyeQ0XDxX859Iv34ai-zi7rs-qp6uviHFDE4Dxj_djw-fA04RKrm8bzFtzNGK3cCiPF00WwYc_U_ps-DlDDx2KWkFQ'
+      }
+    ],
+    phone: '(080) 4146-3705',
+    website: 'meghanafoods.co.in',
+    hours: '11:30 AM - 11:30 PM',
+    address: '124 KHB Colony, 5th Block, Koramangala, Bangalore',
+    mapImage: SOUTH_INDIA_MAP_IMAGE,
+    isVeg: false,
+    isPureVeg: false
+  },
 
   // --- CHENNAI (Tamil Nadu) ---
   {
@@ -679,6 +949,141 @@ export const RESTAURANTS: Restaurant[] = [
     isVeg: true,
     isPureVeg: false
   },
+  {
+    id: 'saravana-bhavan-chennai',
+    name: 'Hotel Saravana Bhavan',
+    cuisine: 'South Indian • 100% Pure Veg Iconic Tiffins',
+    neighborhood: 'Mylapore / RK Salai',
+    city: 'Chennai',
+    rating: 4.8,
+    reviewsCount: 35600,
+    priceRange: '$',
+    priceForTwo: '₹350 for two',
+    distance: '2.8 km',
+    matchScore: 99,
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBwui69H2nqjfTLgjmnr4hgF3_fd2owLCO6kipXwZIXuD1IvjXPmQQCVCQOQmNgZ8dBioAq_TmZq6jSWUc3pA3hAWpmqPfAbyNDzpLNed2H_Migk6IuTn0LY_y7x4nO0uXLFFR8uH9Kpj64sT1i3yt6Vrlwv8QKsyeQ0XDxX859Iv34ai-zi7rs-qp6uviHFDE4Dxj_djw-fA04RKrm8bzFtzNGK3cCiPF00WwYc_U_ps-DlDDx2KWkFQ',
+    tags: ['Pure Veg', 'Mini Tiffin', 'Ghee Roast Dosa', 'Filter Coffee', 'Global Legend'],
+    vibe: 'Lively',
+    vibes: ['Lively', 'Casual', 'Family'],
+    mustTry: 'Special Executive Mini Tiffin, Ghee Roast Dosa, Rava Khichdi, Kumbakonam Degree Coffee',
+    aiReasoning: 'The international flagbearer of vegetarian Tamil cuisine. Famous for its pristine high-speed service, crispy golden ghee roast dosas, and legendary mini tiffin platters.',
+    aiInsight: 'A beloved Chennai institution where every breakfast dish is crafted to mathematical perfection with pure ghee.',
+    signatureDishes: [
+      {
+        id: 'hsb-1',
+        name: 'Grand Executive Mini Tiffin Platter',
+        description: 'Sampler platter featuring 1 mini Masala Dosa, 2 Mini Idlis soaked in Sambar, 1 Crispy Medu Vada, Rava Kesari sweet and Poori Masala.',
+        price: '₹175',
+        matchScore: 99,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBwui69H2nqjfTLgjmnr4hgF3_fd2owLCO6kipXwZIXuD1IvjXPmQQCVCQOQmNgZ8dBioAq_TmZq6jSWUc3pA3hAWpmqPfAbyNDzpLNed2H_Migk6IuTn0LY_y7x4nO0uXLFFR8uH9Kpj64sT1i3yt6Vrlwv8QKsyeQ0XDxX859Iv34ai-zi7rs-qp6uviHFDE4Dxj_djw-fA04RKrm8bzFtzNGK3cCiPF00WwYc_U_ps-DlDDx2KWkFQ'
+      },
+      {
+        id: 'hsb-2',
+        name: 'Crispy Ghee Paper Roast Dosa',
+        description: 'Wafer-thin, foot-long crispy cone dosa drizzled with pure aromatic cow ghee and paired with coconut, tomato & coriander chutneys.',
+        price: '₹140',
+        matchScore: 98,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBwui69H2nqjfTLgjmnr4hgF3_fd2owLCO6kipXwZIXuD1IvjXPmQQCVCQOQmNgZ8dBioAq_TmZq6jSWUc3pA3hAWpmqPfAbyNDzpLNed2H_Migk6IuTn0LY_y7x4nO0uXLFFR8uH9Kpj64sT1i3yt6Vrlwv8QKsyeQ0XDxX859Iv34ai-zi7rs-qp6uviHFDE4Dxj_djw-fA04RKrm8bzFtzNGK3cCiPF00WwYc_U_ps-DlDDx2KWkFQ'
+      }
+    ],
+    phone: '(044) 2811-4999',
+    website: 'saravanabhavan.com',
+    hours: '6:00 AM - 11:00 PM',
+    address: 'Dr. Radhakrishnan Salai, Mylapore, Chennai',
+    mapImage: SOUTH_INDIA_MAP_IMAGE,
+    isVeg: true,
+    isPureVeg: true
+  },
+  {
+    id: 'dindigul-thalappakatti-chennai',
+    name: 'Dindigul Thalappakatti',
+    cuisine: 'Dindigul Tamil • Seeraga Samba Biryani',
+    neighborhood: 'T. Nagar / GN Chetty Road',
+    city: 'Chennai',
+    rating: 4.8,
+    reviewsCount: 31200,
+    priceRange: '$$',
+    priceForTwo: '₹650 for two',
+    distance: '2.3 km',
+    matchScore: 98,
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDf6EsMkuk84g_5EPYKRo6ZG-sz_lvsN4pzNG9RRC3s11lJA2pSJ6jSf6_fnB8JMpGACPifHHoa4dVuo90RUewAehsl0LUCOFLt-YS4V3EMAPcPfZ7_pfwRs2GRBH6r65LAeobsQrOanTvmEJBk6Iyd0Xr_CnK7TcP1H9v_2ovvQH11sFktxuTnbpHu4UC7CqSWi7Yr9e3hYSNo9FbLTkp0k3PXjXQZtzY4ozIIIh0TZe_P8qCTAXeTAQ',
+    tags: ['Seeraga Samba Biryani', 'Mutton Chukka', 'Ennai Kathirikai', 'Heritage Tamil'],
+    vibe: 'Lively',
+    vibes: ['Lively', 'Casual', 'Family'],
+    mustTry: 'Dindigul Thalappakatti Mutton Biryani, Pepper Chicken Roast, Ennai Kathirikai Curry',
+    aiReasoning: 'Established in 1957 in Dindigul, famous for cooking tiny, aromatic Seeraga Samba rice with grass-fed tender mutton, cold-pressed gingelly oil and stone-ground spices.',
+    aiInsight: 'Tamil Nadu’s most celebrated traditional biryani heritage with a distinctive, tangy pepper-rich profile.',
+    signatureDishes: [
+      {
+        id: 'dt-1',
+        name: 'Signature Thalappakatti Mutton Biryani',
+        description: 'Authentic Dindigul-style small grain Seeraga Samba rice simmered with tender mutton, curd, green chillies, and served with Dalcha & onion raita.',
+        price: '₹340',
+        matchScore: 99,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDf6EsMkuk84g_5EPYKRo6ZG-sz_lvsN4pzNG9RRC3s11lJA2pSJ6jSf6_fnB8JMpGACPifHHoa4dVuo90RUewAehsl0LUCOFLt-YS4V3EMAPcPfZ7_pfwRs2GRBH6r65LAeobsQrOanTvmEJBk6Iyd0Xr_CnK7TcP1H9v_2ovvQH11sFktxuTnbpHu4UC7CqSWi7Yr9e3hYSNo9FbLTkp0k3PXjXQZtzY4ozIIIh0TZe_P8qCTAXeTAQ'
+      },
+      {
+        id: 'dt-2',
+        name: 'Dindigul Black Pepper Chicken Fry',
+        description: 'Succulent country chicken roasted in fresh crushed black peppercorns, shallots, curry leaves, and country spices.',
+        price: '₹280',
+        matchScore: 96,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCp_SfwVODp3oDSv97exBU9aXRisDCpbE8JVk5Y6OmcIpsiuDK9EnEB-dhEbq6bxZe9fy-X8YynvuuyNZqrLl-V64qVlUKe6lDX6L0ao1XTVhxkBONB0cz4y4YVNixIBEPp7HXKSjjnr012etDr9SamZ1Mw_Tldd2g1dRt4Bgr70VnRKdZqI0sPpOIa-_65hthlP2SNYrekzb0WacTMNXHdJITvzyTcQwqSIlKqlxIHAXb2B7M6pu1aCA'
+      }
+    ],
+    phone: '(044) 4344-9999',
+    website: 'thalappakatti.com',
+    hours: '11:00 AM - 11:30 PM',
+    address: 'GN Chetty Road, T. Nagar, Chennai',
+    mapImage: SOUTH_INDIA_MAP_IMAGE,
+    isVeg: false,
+    isPureVeg: false
+  },
+  {
+    id: 'junior-kuppanna-chennai',
+    name: 'Junior Kuppanna',
+    cuisine: 'Kongu Nadu Tamil • Mutton Specials & Kari Dosa',
+    neighborhood: 'Nungambakkam',
+    city: 'Chennai',
+    rating: 4.8,
+    reviewsCount: 22800,
+    priceRange: '$$',
+    priceForTwo: '₹600 for two',
+    distance: '3.0 km',
+    matchScore: 97,
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBwlAvJp7sw8u4dpcwahZayRcygGCqTRyyo4oWTayr8GjPcS8JcMPDJL5994oBB3Wxlm0T-itPoZm7YCVnTG1UPhhDTTIBSS42ogp9lVZcRwzqYALEdPMVGOzNqOr0RKe-q-y4-LSmEfpa1dJMfRLXZjkR7WhgD7vPK5_Rn12aqWbNgDqC9vQB1uA7FVQuELkHGvgOZN0j7ZdJetBuXp43Nytk2zBF19oyYesA_BuAlHPIl2zQ2lkNjvA',
+    tags: ['Kongu Nadu', 'Pallipalayam Chicken', 'Mutton Sukka', 'Kari Dosa', 'Spicy Tamil'],
+    vibe: 'Lively',
+    vibes: ['Lively', 'Casual'],
+    mustTry: 'Kongu Pallipalayam Chicken, Mutton Chukka, Madurai Mutton Kari Dosa, Parotta',
+    aiReasoning: 'Hailing from Erode in 1960, Junior Kuppanna specializes in Kongu Nadu recipes prepared without artificial colorings, featuring dry shallots and whole red chilies.',
+    aiInsight: 'The home of authentic rustic Tamil country food and melt-in-the-mouth mutton brain and chukka roasts.',
+    signatureDishes: [
+      {
+        id: 'jk-1',
+        name: 'Kongu Style Pallipalayam Chicken',
+        description: 'Tender chicken slow-sautéed with whole dried red chilies, freshly shaved coconut slices, shallots and crushed garlic.',
+        price: '₹290',
+        matchScore: 98,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCp_SfwVODp3oDSv97exBU9aXRisDCpbE8JVk5Y6OmcIpsiuDK9EnEB-dhEbq6bxZe9fy-X8YynvuuyNZqrLl-V64qVlUKe6lDX6L0ao1XTVhxkBONB0cz4y4YVNixIBEPp7HXKSjjnr012etDr9SamZ1Mw_Tldd2g1dRt4Bgr70VnRKdZqI0sPpOIa-_65hthlP2SNYrekzb0WacTMNXHdJITvzyTcQwqSIlKqlxIHAXb2B7M6pu1aCA'
+      },
+      {
+        id: 'jk-2',
+        name: 'Madurai Crispy Mutton Kari Dosa',
+        description: 'Thick fermented dosa base topped with egg omelette, spicy minced mutton sukka masala, and roasted in pure country ghee.',
+        price: '₹260',
+        matchScore: 97,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBwlAvJp7sw8u4dpcwahZayRcygGCqTRyyo4oWTayr8GjPcS8JcMPDJL5994oBB3Wxlm0T-itPoZm7YCVnTG1UPhhDTTIBSS42ogp9lVZcRwzqYALEdPMVGOzNqOr0RKe-q-y4-LSmEfpa1dJMfRLXZjkR7WhgD7vPK5_Rn12aqWbNgDqC9vQB1uA7FVQuELkHGvgOZN0j7ZdJetBuXp43Nytk2zBF19oyYesA_BuAlHPIl2zQ2lkNjvA'
+      }
+    ],
+    phone: '(044) 4200-5555',
+    website: 'kuppanna.com',
+    hours: '11:30 AM - 11:00 PM',
+    address: 'Cathedral Road, Nungambakkam, Chennai',
+    mapImage: SOUTH_INDIA_MAP_IMAGE,
+    isVeg: false,
+    isPureVeg: false
+  },
 
   // --- KOCHI (Kerala) ---
   {
@@ -792,6 +1197,141 @@ export const RESTAURANTS: Restaurant[] = [
     isVeg: true,
     isPureVeg: false
   },
+  {
+    id: 'dhe-puttu-kochi',
+    name: 'Dhe Puttu',
+    cuisine: 'Traditional Kerala • Puttu Innovations & Curries',
+    neighborhood: 'Edappally / NH Bypass',
+    city: 'Kochi',
+    rating: 4.8,
+    reviewsCount: 21400,
+    priceRange: '$$',
+    priceForTwo: '₹550 for two',
+    distance: '3.5 km',
+    matchScore: 98,
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBwlAvJp7sw8u4dpcwahZayRcygGCqTRyyo4oWTayr8GjPcS8JcMPDJL5994oBB3Wxlm0T-itPoZm7YCVnTG1UPhhDTTIBSS42ogp9lVZcRwzqYALEdPMVGOzNqOr0RKe-q-y4-LSmEfpa1dJMfRLXZjkR7WhgD7vPK5_Rn12aqWbNgDqC9vQB1uA7FVQuELkHGvgOZN0j7ZdJetBuXp43Nytk2zBF19oyYesA_BuAlHPIl2zQ2lkNjvA',
+    tags: ['Malabar Puttu', 'Chemmeen Puttu', 'Duck Roast', 'Kerala Special', 'Family'],
+    vibe: 'Lively',
+    vibes: ['Lively', 'Casual', 'Family'],
+    mustTry: 'Erachi (Mutton/Beef) Puttu, Chemmeen Puttu, Kadala Curry with Steamed Rice Puttu',
+    aiReasoning: 'A revolutionary Kerala concept celebrating the humble steamed cylindrical rice cake (puttu) in over 50 sweet, savory, and seafood variations.',
+    aiInsight: 'An unmissable Kochi cultural experience bringing authentic Kerala breakfast and dinner delicacies together under one bamboo-accented roof.',
+    signatureDishes: [
+      {
+        id: 'dp-1',
+        name: 'Malabar Spiced Chemmeen (Prawn) Puttu',
+        description: 'Layered rice flour and fresh coconut cylinder stuffed with juicy shallot-fried spiced Malabar prawns, served with coconut gravy.',
+        price: '₹290',
+        matchScore: 99,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCp_SfwVODp3oDSv97exBU9aXRisDCpbE8JVk5Y6OmcIpsiuDK9EnEB-dhEbq6bxZe9fy-X8YynvuuyNZqrLl-V64qVlUKe6lDX6L0ao1XTVhxkBONB0cz4y4YVNixIBEPp7HXKSjjnr012etDr9SamZ1Mw_Tldd2g1dRt4Bgr70VnRKdZqI0sPpOIa-_65hthlP2SNYrekzb0WacTMNXHdJITvzyTcQwqSIlKqlxIHAXb2B7M6pu1aCA'
+      },
+      {
+        id: 'dp-2',
+        name: 'Classic Ghee Rice Puttu with Malabar Kadala Curry',
+        description: 'Fragrant steamed rice flour puttu served with rich black chickpea curry simmered in roasted coconut gravy and crispy papadum.',
+        price: '₹160',
+        matchScore: 97,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBwui69H2nqjfTLgjmnr4hgF3_fd2owLCO6kipXwZIXuD1IvjXPmQQCVCQOQmNgZ8dBioAq_TmZq6jSWUc3pA3hAWpmqPfAbyNDzpLNed2H_Migk6IuTn0LY_y7x4nO0uXLFFR8uH9Kpj64sT1i3yt6Vrlwv8QKsyeQ0XDxX859Iv34ai-zi7rs-qp6uviHFDE4Dxj_djw-fA04RKrm8bzFtzNGK3cCiPF00WwYc_U_ps-DlDDx2KWkFQ'
+      }
+    ],
+    phone: '(0484) 402-4455',
+    website: 'dheputtu.com',
+    hours: '11:30 AM - 11:30 PM',
+    address: 'Near Oberon Mall, NH Bypass, Edappally, Kochi',
+    mapImage: SOUTH_INDIA_MAP_IMAGE,
+    isVeg: false,
+    isPureVeg: false
+  },
+  {
+    id: 'grand-pavilion-kochi',
+    name: 'Grand Pavilion - Grand Hotel',
+    cuisine: 'Kerala Coastal & Syrian Christian • Heritage Dining',
+    neighborhood: 'MG Road, Ernakulam',
+    city: 'Kochi',
+    rating: 4.8,
+    reviewsCount: 18500,
+    priceRange: '$$$',
+    priceForTwo: '₹1,200 for two',
+    distance: '1.8 km',
+    matchScore: 98,
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBEzv6O9EUChnwzYjv-YVzn5mfNxBBi8PHb9bY0OrVjdoL6hgDHwxg2PdbxZuIvRRztf_4wRcSSQLonr8nTO7DIx8n_olI5u0gWEsiFYF3Eett6K129Xn0u2wGxYRK1GT9O-TERS0FoqyRZZcrbIykaPWZgQ1KS1ZJ7rpZiuh-YjiVfXFSEjyP5Z5GWktiKMD3tE-yodXgkrMjZgS4KN_44rnp2KemqpnSpb2wGb9u-ZotFf2s02KwbLw',
+    tags: ['Karimeen Pollichathu', 'Appam Stew', 'Syrian Christian', 'Heritage', 'Date Night'],
+    vibe: 'Romantic',
+    vibes: ['Romantic', 'Business', 'Family'],
+    mustTry: 'Karimeen Pollichathu, Soft Lace Appams with Tender Mutton Stew, Grand Fish Moilee',
+    aiReasoning: 'Since 1963, the Grand Hotel has been Kochi’s premier sanctuary for authentic Syrian Christian home-style delicacies and fresh backwater seafood.',
+    aiInsight: 'The gold standard for delicate coconut milk stews, soft hot appams, and impeccably spiced banana leaf wrapped pearl spot fish.',
+    signatureDishes: [
+      {
+        id: 'gp-1',
+        name: 'Soft Appam with Tender Mutton Stew',
+        description: 'Lacy, soft fermented rice hoppers paired with a gentle, fragrant coconut milk stew of tender mutton, green chillies, and ginger.',
+        price: '₹360',
+        matchScore: 99,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCp_SfwVODp3oDSv97exBU9aXRisDCpbE8JVk5Y6OmcIpsiuDK9EnEB-dhEbq6bxZe9fy-X8YynvuuyNZqrLl-V64qVlUKe6lDX6L0ao1XTVhxkBONB0cz4y4YVNixIBEPp7HXKSjjnr012etDr9SamZ1Mw_Tldd2g1dRt4Bgr70VnRKdZqI0sPpOIa-_65hthlP2SNYrekzb0WacTMNXHdJITvzyTcQwqSIlKqlxIHAXb2B7M6pu1aCA'
+      },
+      {
+        id: 'gp-2',
+        name: 'Syrian Christian Duck Roast',
+        description: 'Succulent Kuttanad duck braised with caramelized shallots, vinegar, peppercorns, and whole Kerala spices.',
+        price: '₹410',
+        matchScore: 97,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBwlAvJp7sw8u4dpcwahZayRcygGCqTRyyo4oWTayr8GjPcS8JcMPDJL5994oBB3Wxlm0T-itPoZm7YCVnTG1UPhhDTTIBSS42ogp9lVZcRwzqYALEdPMVGOzNqOr0RKe-q-y4-LSmEfpa1dJMfRLXZjkR7WhgD7vPK5_Rn12aqWbNgDqC9vQB1uA7FVQuELkHGvgOZN0j7ZdJetBuXp43Nytk2zBF19oyYesA_BuAlHPIl2zQ2lkNjvA'
+      }
+    ],
+    phone: '(0484) 238-2061',
+    website: 'grandhotelkerala.com',
+    hours: '12:00 PM - 3:30 PM, 7:00 PM - 11:00 PM',
+    address: 'Grand Hotel, MG Road, Ernakulam, Kochi',
+    mapImage: SOUTH_INDIA_MAP_IMAGE,
+    isVeg: false,
+    isPureVeg: false
+  },
+  {
+    id: 'brindhavan-vegetarian-kochi',
+    name: 'Brindhavan Vegetarian Restaurant',
+    cuisine: 'South Indian • 100% Pure Veg Kerala Delights',
+    neighborhood: 'Palarivattom',
+    city: 'Kochi',
+    rating: 4.8,
+    reviewsCount: 15600,
+    priceRange: '$',
+    priceForTwo: '₹320 for two',
+    distance: '2.9 km',
+    matchScore: 98,
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBwui69H2nqjfTLgjmnr4hgF3_fd2owLCO6kipXwZIXuD1IvjXPmQQCVCQOQmNgZ8dBioAq_TmZq6jSWUc3pA3hAWpmqPfAbyNDzpLNed2H_Migk6IuTn0LY_y7x4nO0uXLFFR8uH9Kpj64sT1i3yt6Vrlwv8QKsyeQ0XDxX859Iv34ai-zi7rs-qp6uviHFDE4Dxj_djw-fA04RKrm8bzFtzNGK3cCiPF00WwYc_U_ps-DlDDx2KWkFQ',
+    tags: ['Pure Veg', 'Nei Roast', 'Kerala Sadhya', 'Tiffins', 'Vegetarian'],
+    vibe: 'Casual',
+    vibes: ['Casual', 'Family'],
+    mustTry: 'Golden Nei (Ghee) Roast Dosa, Malabar Parotta with Vegetable Kurma, Filter Coffee',
+    aiReasoning: 'Kochi’s highest rated pure vegetarian destination for crispy golden ghee roasts, traditional Kerala parotta with coconut-rich vegetable stew, and aromatic filter coffee.',
+    aiInsight: 'Clean, elegant, and uncompromising pure vegetarian dining popular among local families for breakfast and weekend dinners.',
+    signatureDishes: [
+      {
+        id: 'bv-1',
+        name: 'Golden Nei (Ghee) Roast Dosa',
+        description: 'Crispy fermented crepe roasted with pure desi ghee until deeply golden, served with fresh coconut, tomato & mint chutneys and hot sambar.',
+        price: '₹110',
+        matchScore: 98,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBwui69H2nqjfTLgjmnr4hgF3_fd2owLCO6kipXwZIXuD1IvjXPmQQCVCQOQmNgZ8dBioAq_TmZq6jSWUc3pA3hAWpmqPfAbyNDzpLNed2H_Migk6IuTn0LY_y7x4nO0uXLFFR8uH9Kpj64sT1i3yt6Vrlwv8QKsyeQ0XDxX859Iv34ai-zi7rs-qp6uviHFDE4Dxj_djw-fA04RKrm8bzFtzNGK3cCiPF00WwYc_U_ps-DlDDx2KWkFQ'
+      },
+      {
+        id: 'bv-2',
+        name: 'Layered Malabar Parotta with Veg Kurma',
+        description: 'Flaky, layered parottas served with rich mixed vegetable stew simmered in coconut milk, cashew paste, and whole cardamom.',
+        price: '₹140',
+        matchScore: 96,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBwui69H2nqjfTLgjmnr4hgF3_fd2owLCO6kipXwZIXuD1IvjXPmQQCVCQOQmNgZ8dBioAq_TmZq6jSWUc3pA3hAWpmqPfAbyNDzpLNed2H_Migk6IuTn0LY_y7x4nO0uXLFFR8uH9Kpj64sT1i3yt6Vrlwv8QKsyeQ0XDxX859Iv34ai-zi7rs-qp6uviHFDE4Dxj_djw-fA04RKrm8bzFtzNGK3cCiPF00WwYc_U_ps-DlDDx2KWkFQ'
+      }
+    ],
+    phone: '(0484) 401-2233',
+    website: 'brindhavanrestaurant.com',
+    hours: '7:00 AM - 10:30 PM',
+    address: 'Near Palarivattom Junction, Pipeline Road, Kochi',
+    mapImage: SOUTH_INDIA_MAP_IMAGE,
+    isVeg: true,
+    isPureVeg: true
+  },
 
   // --- VISAKHAPATNAM (Andhra Pradesh) ---
   {
@@ -901,6 +1441,141 @@ export const RESTAURANTS: Restaurant[] = [
     website: 'rajugaridhabavizag.in',
     hours: '11:30 AM - 11:00 PM',
     address: 'Near Rushikonda Beach, Beach Road, Visakhapatnam',
+    mapImage: SOUTH_INDIA_MAP_IMAGE,
+    isVeg: false,
+    isPureVeg: false
+  },
+  {
+    id: 'sai-ram-parlour-vizag',
+    name: 'Sai Ram Parlour',
+    cuisine: 'South Indian • 100% Pure Veg Tiffins & Meals',
+    neighborhood: 'Diamond Park / Dwaraka Nagar',
+    city: 'Visakhapatnam',
+    rating: 4.8,
+    reviewsCount: 19800,
+    priceRange: '$',
+    priceForTwo: '₹220 for two',
+    distance: '1.4 km',
+    matchScore: 98,
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBwui69H2nqjfTLgjmnr4hgF3_fd2owLCO6kipXwZIXuD1IvjXPmQQCVCQOQmNgZ8dBioAq_TmZq6jSWUc3pA3hAWpmqPfAbyNDzpLNed2H_Migk6IuTn0LY_y7x4nO0uXLFFR8uH9Kpj64sT1i3yt6Vrlwv8QKsyeQ0XDxX859Iv34ai-zi7rs-qp6uviHFDE4Dxj_djw-fA04RKrm8bzFtzNGK3cCiPF00WwYc_U_ps-DlDDx2KWkFQ',
+    tags: ['Pure Veg', 'Pesarattu Upma', 'Filter Coffee', 'Thali', 'Fast Service'],
+    vibe: 'Lively',
+    vibes: ['Lively', 'Casual'],
+    mustTry: 'Ghee MLA Pesarattu Upma, Sambar Vada, Curd Rice with Ginger Pickle',
+    aiReasoning: 'A legendary Vizag breakfast hub known for serving thousands of crispy golden ghee pesarattus with ginger allam pachadi and aromatic degree filter coffee every morning.',
+    aiInsight: 'The daily morning heartbeat of Dwaraka Nagar for commuters, families, and breakfast aficionados.',
+    signatureDishes: [
+      {
+        id: 'srp-1',
+        name: 'Ghee MLA Pesarattu with Upma',
+        description: 'Crispy whole moong dal crepe griddled with pure desi ghee, stuffed with seasoned semolina upma and served with sweet-tangy allam pachadi.',
+        price: '₹95',
+        matchScore: 99,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBwui69H2nqjfTLgjmnr4hgF3_fd2owLCO6kipXwZIXuD1IvjXPmQQCVCQOQmNgZ8dBioAq_TmZq6jSWUc3pA3hAWpmqPfAbyNDzpLNed2H_Migk6IuTn0LY_y7x4nO0uXLFFR8uH9Kpj64sT1i3yt6Vrlwv8QKsyeQ0XDxX859Iv34ai-zi7rs-qp6uviHFDE4Dxj_djw-fA04RKrm8bzFtzNGK3cCiPF00WwYc_U_ps-DlDDx2KWkFQ'
+      },
+      {
+        id: 'srp-2',
+        name: 'Dipped Sambar Vada Duo',
+        description: 'Crispy deep-fried medu vadas submerged in hot, slow-simmered vegetable sambar with fresh coriander and coconut chutney.',
+        price: '₹75',
+        matchScore: 97,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBwui69H2nqjfTLgjmnr4hgF3_fd2owLCO6kipXwZIXuD1IvjXPmQQCVCQOQmNgZ8dBioAq_TmZq6jSWUc3pA3hAWpmqPfAbyNDzpLNed2H_Migk6IuTn0LY_y7x4nO0uXLFFR8uH9Kpj64sT1i3yt6Vrlwv8QKsyeQ0XDxX859Iv34ai-zi7rs-qp6uviHFDE4Dxj_djw-fA04RKrm8bzFtzNGK3cCiPF00WwYc_U_ps-DlDDx2KWkFQ'
+      }
+    ],
+    phone: '(0891) 274-1234',
+    website: 'sairamparlourvizag.com',
+    hours: '6:00 AM - 10:30 PM',
+    address: 'Near Diamond Park, Dwaraka Nagar, Visakhapatnam',
+    mapImage: SOUTH_INDIA_MAP_IMAGE,
+    isVeg: true,
+    isPureVeg: true
+  },
+  {
+    id: 'spicy-venue-vizag',
+    name: 'The Spicy Venue',
+    cuisine: 'Authentic Coastal Andhra & Godavari Delicacies',
+    neighborhood: 'Siripuram / Waltair Uplands',
+    city: 'Visakhapatnam',
+    rating: 4.8,
+    reviewsCount: 16200,
+    priceRange: '$$',
+    priceForTwo: '₹750 for two',
+    distance: '2.3 km',
+    matchScore: 98,
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBwlAvJp7sw8u4dpcwahZayRcygGCqTRyyo4oWTayr8GjPcS8JcMPDJL5994oBB3Wxlm0T-itPoZm7YCVnTG1UPhhDTTIBSS42ogp9lVZcRwzqYALEdPMVGOzNqOr0RKe-q-y4-LSmEfpa1dJMfRLXZjkR7WhgD7vPK5_Rn12aqWbNgDqC9vQB1uA7FVQuELkHGvgOZN0j7ZdJetBuXp43Nytk2zBF19oyYesA_BuAlHPIl2zQ2lkNjvA',
+    tags: ['Ulavacharu Biryani', 'Avakaya Biryani', 'Apricot Delight', 'Godavari Style', 'Family'],
+    vibe: 'Casual',
+    vibes: ['Casual', 'Family'],
+    mustTry: 'Ulavacharu Chicken Dum Biryani, Potlam Biryani, Famous Apricot Delight Dessert',
+    aiReasoning: 'Renowned for inventing the cult-favorite Apricot Delight dessert alongside richly spiced Godavari district pulaos wrapped in banana leaves.',
+    aiInsight: 'An essential Vizag culinary stop for foodies who want authentic Telugu regional flavors and unforgettable artisanal desserts.',
+    signatureDishes: [
+      {
+        id: 'spv-1',
+        name: 'The Spicy Venue Ulavacharu Biryani',
+        description: 'Basmati rice infused with slow-simmered horse gram reduction, tender spices, spiced chicken, and fresh mint leaves.',
+        price: '₹340',
+        matchScore: 99,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDf6EsMkuk84g_5EPYKRo6ZG-sz_lvsN4pzNG9RRC3s11lJA2pSJ6jSf6_fnB8JMpGACPifHHoa4dVuo90RUewAehsl0LUCOFLt-YS4V3EMAPcPfZ7_pfwRs2GRBH6r65LAeobsQrOanTvmEJBk6Iyd0Xr_CnK7TcP1H9v_2ovvQH11sFktxuTnbpHu4UC7CqSWi7Yr9e3hYSNo9FbLTkp0k3PXjXQZtzY4ozIIIh0TZe_P8qCTAXeTAQ'
+      },
+      {
+        id: 'spv-2',
+        name: 'World Famous Apricot Delight',
+        description: 'Layered dessert made with stewed Turkish apricots, smooth custard cream, sponge cake, and slivered almonds.',
+        price: '₹190',
+        matchScore: 99,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA_tMNke_20iyzpQ3PaLGJDdf3whV_ifW8H3mqwUgeb1xtNan5iEV-rO9kIVorRgI9-quF9ti_gPNY1lbkch7x1jbs8J9yW-usIewNEbXHa2VnI0T1HVZy4LU5X4-nb9lPVx7FI0SMyA8OujN7itgGnNbv6LGN8DQpHYm0geVXWDbB0qLPRQhACkT9gUorn0sslPLeNKWMmiQFfwpkcuPSMIw9RSuPPqPkm2hYCFIiZ-RQymlOM551t9Q'
+      }
+    ],
+    phone: '(0891) 279-9922',
+    website: 'thespicyvenue.com',
+    hours: '12:00 PM - 3:45 PM, 7:00 PM - 10:45 PM',
+    address: 'Near Siripuram Towers, Waltair Uplands, Visakhapatnam',
+    mapImage: SOUTH_INDIA_MAP_IMAGE,
+    isVeg: false,
+    isPureVeg: false
+  },
+  {
+    id: 'tycoon-restaurant-vizag',
+    name: 'Tycoon Multi-Cuisine Restaurant',
+    cuisine: 'Coastal Andhra, Tandoori & Mughlai • Fine Dining',
+    neighborhood: 'VIP Road / Siripuram',
+    city: 'Visakhapatnam',
+    rating: 4.8,
+    reviewsCount: 14200,
+    priceRange: '$$$',
+    priceForTwo: '₹1,100 for two',
+    distance: '1.9 km',
+    matchScore: 97,
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCp_SfwVODp3oDSv97exBU9aXRisDCpbE8JVk5Y6OmcIpsiuDK9EnEB-dhEbq6bxZe9fy-X8YynvuuyNZqrLl-V64qVlUKe6lDX6L0ao1XTVhxkBONB0cz4y4YVNixIBEPp7HXKSjjnr012etDr9SamZ1Mw_Tldd2g1dRt4Bgr70VnRKdZqI0sPpOIa-_65hthlP2SNYrekzb0WacTMNXHdJITvzyTcQwqSIlKqlxIHAXb2B7M6pu1aCA',
+    tags: ['Tandoori Crab', 'Bamboo Chicken', 'Fine Dining', 'Family', 'Cocktails'],
+    vibe: 'Business',
+    vibes: ['Business', 'Family', 'Romantic'],
+    mustTry: 'Tandoori Crab Masala, Bamboo Chicken Pulao, Natukodi Biryani',
+    aiReasoning: 'One of Vizag’s oldest premium multi-cuisine establishments on VIP Road, acclaimed for top-tier seafood selections, succulent tandoor meats, and rich coastal gravies.',
+    aiInsight: 'The go-to executive dining spot for corporate gatherings and family celebrations in Vizag.',
+    signatureDishes: [
+      {
+        id: 'tyc-1',
+        name: 'Coastal Tandoori Mud Crab',
+        description: 'Whole fresh sea crab marinated in crushed coriander, mustard oil, ginger, and roasted in high-heat clay tandoor.',
+        price: '₹550',
+        matchScore: 98,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBwlAvJp7sw8u4dpcwahZayRcygGCqTRyyo4oWTayr8GjPcS8JcMPDJL5994oBB3Wxlm0T-itPoZm7YCVnTG1UPhhDTTIBSS42ogp9lVZcRwzqYALEdPMVGOzNqOr0RKe-q-y4-LSmEfpa1dJMfRLXZjkR7WhgD7vPK5_Rn12aqWbNgDqC9vQB1uA7FVQuELkHGvgOZN0j7ZdJetBuXp43Nytk2zBF19oyYesA_BuAlHPIl2zQ2lkNjvA'
+      },
+      {
+        id: 'tyc-2',
+        name: 'Araku Valley Bamboo Chicken',
+        description: 'Country chicken infused with native tribal herbs, stuffed in natural bamboo stalks and slow charcoal roasted over ember flames.',
+        price: '₹420',
+        matchScore: 97,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCp_SfwVODp3oDSv97exBU9aXRisDCpbE8JVk5Y6OmcIpsiuDK9EnEB-dhEbq6bxZe9fy-X8YynvuuyNZqrLl-V64qVlUKe6lDX6L0ao1XTVhxkBONB0cz4y4YVNixIBEPp7HXKSjjnr012etDr9SamZ1Mw_Tldd2g1dRt4Bgr70VnRKdZqI0sPpOIa-_65hthlP2SNYrekzb0WacTMNXHdJITvzyTcQwqSIlKqlxIHAXb2B7M6pu1aCA'
+      }
+    ],
+    phone: '(0891) 256-8899',
+    website: 'tycoonrestaurant.com',
+    hours: '12:00 PM - 3:30 PM, 7:00 PM - 11:00 PM',
+    address: 'VIP Road, CBM Compound, Siripuram, Visakhapatnam',
     mapImage: SOUTH_INDIA_MAP_IMAGE,
     isVeg: false,
     isPureVeg: false
@@ -1054,5 +1729,764 @@ export const RESTAURANTS: Restaurant[] = [
     mapImage: SOUTH_INDIA_MAP_IMAGE,
     isVeg: false,
     isPureVeg: false
+  },
+  {
+    id: 'raghavendra-bhavan-nellore',
+    name: 'Sri Raghavendra Bhavan',
+    cuisine: 'South Indian • 100% Pure Veg Traditional Tiffins',
+    neighborhood: 'Ranganayakulapet / Trunk Road',
+    city: 'Nellore',
+    rating: 4.8,
+    reviewsCount: 12400,
+    priceRange: '$',
+    priceForTwo: '₹200 for two',
+    distance: '1.5 km',
+    matchScore: 98,
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBwui69H2nqjfTLgjmnr4hgF3_fd2owLCO6kipXwZIXuD1IvjXPmQQCVCQOQmNgZ8dBioAq_TmZq6jSWUc3pA3hAWpmqPfAbyNDzpLNed2H_Migk6IuTn0LY_y7x4nO0uXLFFR8uH9Kpj64sT1i3yt6Vrlwv8QKsyeQ0XDxX859Iv34ai-zi7rs-qp6uviHFDE4Dxj_djw-fA04RKrm8bzFtzNGK3cCiPF00WwYc_U_ps-DlDDx2KWkFQ',
+    tags: ['Pure Veg', 'Ghee Karam Dosa', 'Poha Upma', 'Filter Coffee', 'Heritage'],
+    vibe: 'Casual',
+    vibes: ['Casual', 'Family'],
+    mustTry: 'Nellore Ghee Onion Karam Dosa, Ghee Pongal with Coconut Chutney, Kumbakonam Degree Coffee',
+    aiReasoning: 'A beloved pure vegetarian heritage restaurant in Nellore, celebrated for crispy onion ghee roast dosas topped with homemade gun powder and fresh ginger chutney.',
+    aiInsight: 'The traditional breakfast choice in old Nellore for authentic vegetarian dishes made with pure ghee.',
+    signatureDishes: [
+      {
+        id: 'srb-1',
+        name: 'Ghee Onion Erra Karam Dosa',
+        description: 'Crisp golden crepe laden with caramelized chopped onions, spicy Nellore red chili paste, and a ladle of hot cow ghee.',
+        price: '₹95',
+        matchScore: 99,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBwui69H2nqjfTLgjmnr4hgF3_fd2owLCO6kipXwZIXuD1IvjXPmQQCVCQOQmNgZ8dBioAq_TmZq6jSWUc3pA3hAWpmqPfAbyNDzpLNed2H_Migk6IuTn0LY_y7x4nO0uXLFFR8uH9Kpj64sT1i3yt6Vrlwv8QKsyeQ0XDxX859Iv34ai-zi7rs-qp6uviHFDE4Dxj_djw-fA04RKrm8bzFtzNGK3cCiPF00WwYc_U_ps-DlDDx2KWkFQ'
+      },
+      {
+        id: 'srb-2',
+        name: 'Hot Desi Ghee Pongal with Vada',
+        description: 'Melt-in-mouth rice and yellow lentil porridge cooked with crushed pepper, cumin, ginger, cashews and served with crispy medu vada.',
+        price: '₹85',
+        matchScore: 97,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBwui69H2nqjfTLgjmnr4hgF3_fd2owLCO6kipXwZIXuD1IvjXPmQQCVCQOQmNgZ8dBioAq_TmZq6jSWUc3pA3hAWpmqPfAbyNDzpLNed2H_Migk6IuTn0LY_y7x4nO0uXLFFR8uH9Kpj64sT1i3yt6Vrlwv8QKsyeQ0XDxX859Iv34ai-zi7rs-qp6uviHFDE4Dxj_djw-fA04RKrm8bzFtzNGK3cCiPF00WwYc_U_ps-DlDDx2KWkFQ'
+      }
+    ],
+    phone: '(0861) 233-1122',
+    website: 'sriraghavendrabhavan.in',
+    hours: '6:30 AM - 10:00 PM',
+    address: 'Near Old Bus Stand, Trunk Road, Nellore',
+    mapImage: SOUTH_INDIA_MAP_IMAGE,
+    isVeg: true,
+    isPureVeg: true
+  },
+  {
+    id: 'madras-cafe-nellore',
+    name: 'Madras Cafe Non-Veg & Seafood',
+    cuisine: 'Coastal Andhra & Nellore Seafood Specials',
+    neighborhood: 'Pogathota / Railway Feeder Road',
+    city: 'Nellore',
+    rating: 4.8,
+    reviewsCount: 14800,
+    priceRange: '$$',
+    priceForTwo: '₹580 for two',
+    distance: '1.8 km',
+    matchScore: 97,
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBwlAvJp7sw8u4dpcwahZayRcygGCqTRyyo4oWTayr8GjPcS8JcMPDJL5994oBB3Wxlm0T-itPoZm7YCVnTG1UPhhDTTIBSS42ogp9lVZcRwzqYALEdPMVGOzNqOr0RKe-q-y4-LSmEfpa1dJMfRLXZjkR7WhgD7vPK5_Rn12aqWbNgDqC9vQB1uA7FVQuELkHGvgOZN0j7ZdJetBuXp43Nytk2zBF19oyYesA_BuAlHPIl2zQ2lkNjvA',
+    tags: ['Nellore Fish Fry', 'Prawn Biryani', 'Mutton Fry', 'Spicy Andhra'],
+    vibe: 'Lively',
+    vibes: ['Lively', 'Casual'],
+    mustTry: 'Vanjaram Tawa Fish Fry, Nellore Royyala (Prawn) Biryani, Gongura Mutton',
+    aiReasoning: 'A buzzing local favorite in Pogathota celebrated for fiery seared fresh sea fish catches, Andhra prawn biryanis, and gongura mutton.',
+    aiInsight: 'Popular for its spicy maritime flavors straight from the nearby Bay of Bengal coastline.',
+    signatureDishes: [
+      {
+        id: 'mcn-1',
+        name: 'Vanjaram (Seer Fish) Tawa Roast',
+        description: 'Thick cut King Fish slice marinated in spicy Nellore red masala and shallow fried crisp on cast iron tawa.',
+        price: '₹320',
+        matchScore: 98,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBwlAvJp7sw8u4dpcwahZayRcygGCqTRyyo4oWTayr8GjPcS8JcMPDJL5994oBB3Wxlm0T-itPoZm7YCVnTG1UPhhDTTIBSS42ogp9lVZcRwzqYALEdPMVGOzNqOr0RKe-q-y4-LSmEfpa1dJMfRLXZjkR7WhgD7vPK5_Rn12aqWbNgDqC9vQB1uA7FVQuELkHGvgOZN0j7ZdJetBuXp43Nytk2zBF19oyYesA_BuAlHPIl2zQ2lkNjvA'
+      },
+      {
+        id: 'mcn-2',
+        name: 'Nellore Coastal Royyala (Prawn) Biryani',
+        description: 'Succulent prawns tossed in spicy onion gravy layered with fragrant spiced ghee rice and fried cashews.',
+        price: '₹340',
+        matchScore: 96,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDf6EsMkuk84g_5EPYKRo6ZG-sz_lvsN4pzNG9RRC3s11lJA2pSJ6jSf6_fnB8JMpGACPifHHoa4dVuo90RUewAehsl0LUCOFLt-YS4V3EMAPcPfZ7_pfwRs2GRBH6r65LAeobsQrOanTvmEJBk6Iyd0Xr_CnK7TcP1H9v_2ovvQH11sFktxuTnbpHu4UC7CqSWi7Yr9e3hYSNo9FbLTkp0k3PXjXQZtzY4ozIIIh0TZe_P8qCTAXeTAQ'
+      }
+    ],
+    phone: '(0861) 234-9911',
+    website: 'madrascafenellore.com',
+    hours: '11:30 AM - 10:45 PM',
+    address: 'Railway Feeder Road, Pogathota, Nellore',
+    mapImage: SOUTH_INDIA_MAP_IMAGE,
+    isVeg: false,
+    isPureVeg: false
+  },
+  {
+    id: 'santhi-sweets-nellore',
+    name: 'Santhi Sweets & Restaurant',
+    cuisine: 'Pure Veg Andhra Thali & Traditional Sweets',
+    neighborhood: 'Gandhi Nagar',
+    city: 'Nellore',
+    rating: 4.8,
+    reviewsCount: 11200,
+    priceRange: '$$',
+    priceForTwo: '₹380 for two',
+    distance: '1.6 km',
+    matchScore: 97,
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBwui69H2nqjfTLgjmnr4hgF3_fd2owLCO6kipXwZIXuD1IvjXPmQQCVCQOQmNgZ8dBioAq_TmZq6jSWUc3pA3hAWpmqPfAbyNDzpLNed2H_Migk6IuTn0LY_y7x4nO0uXLFFR8uH9Kpj64sT1i3yt6Vrlwv8QKsyeQ0XDxX859Iv34ai-zi7rs-qp6uviHFDE4Dxj_djw-fA04RKrm8bzFtzNGK3cCiPF00WwYc_U_ps-DlDDx2KWkFQ',
+    tags: ['Pure Veg', 'Malai Kaja', 'Andhra Meals', 'Sweets', 'Family'],
+    vibe: 'Casual',
+    vibes: ['Casual', 'Family'],
+    mustTry: 'Famous Nellore Malai Kaja, Full Andhra Veg Meals, Bellam Jalebi',
+    aiReasoning: 'Renowned for producing Nellore’s iconic juicy Malai Kaja sweets alongside authentic pure vegetarian Andhra thali banquets.',
+    aiInsight: 'A beloved landmark where visitors pick up gift boxes of traditional Nellore sweets and enjoy rich afternoon meals.',
+    signatureDishes: [
+      {
+        id: 'ssn-1',
+        name: 'Famous Nellore Malai Kaja Box',
+        description: 'Crispy layered pastry soaked in rich cardamom sugar syrup with creamy thickened milk (khoya) core.',
+        price: '₹180',
+        matchScore: 99,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA_tMNke_20iyzpQ3PaLGJDdf3whV_ifW8H3mqwUgeb1xtNan5iEV-rO9kIVorRgI9-quF9ti_gPNY1lbkch7x1jbs8J9yW-usIewNEbXHa2VnI0T1HVZy4LU5X4-nb9lPVx7FI0SMyA8OujN7itgGnNbv6LGN8DQpHYm0geVXWDbB0qLPRQhACkT9gUorn0sslPLeNKWMmiQFfwpkcuPSMIw9RSuPPqPkm2hYCFIiZ-RQymlOM551t9Q'
+      },
+      {
+        id: 'ssn-2',
+        name: 'Santhi Deluxe Andhra Veg Meals',
+        description: 'Unlimited traditional meals with hot rice, pure ghee, gun powder, avakaya pachadi, sambar, rasam, and sweet kaja.',
+        price: '₹190',
+        matchScore: 97,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBwui69H2nqjfTLgjmnr4hgF3_fd2owLCO6kipXwZIXuD1IvjXPmQQCVCQOQmNgZ8dBioAq_TmZq6jSWUc3pA3hAWpmqPfAbyNDzpLNed2H_Migk6IuTn0LY_y7x4nO0uXLFFR8uH9Kpj64sT1i3yt6Vrlwv8QKsyeQ0XDxX859Iv34ai-zi7rs-qp6uviHFDE4Dxj_djw-fA04RKrm8bzFtzNGK3cCiPF00WwYc_U_ps-DlDDx2KWkFQ'
+      }
+    ],
+    phone: '(0861) 232-7788',
+    website: 'santhisweetsnellore.com',
+    hours: '8:00 AM - 10:30 PM',
+    address: 'Near Gandhi Statue, Gandhi Nagar, Nellore',
+    mapImage: SOUTH_INDIA_MAP_IMAGE,
+    isVeg: true,
+    isPureVeg: true
+  },
+
+  // --- VIJAYAWADA (Andhra Pradesh) ---
+  {
+    id: 'babai-hotel-vijayawada',
+    name: 'Babai Hotel',
+    cuisine: 'South Indian • 100% Pure Veg Heritage Tiffins',
+    neighborhood: 'Gandhi Nagar / Nageswara Rao Road',
+    city: 'Vijayawada',
+    rating: 4.9,
+    reviewsCount: 19500,
+    priceRange: '$',
+    priceForTwo: '₹220 for two',
+    distance: '1.5 km',
+    matchScore: 99,
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBwui69H2nqjfTLgjmnr4hgF3_fd2owLCO6kipXwZIXuD1IvjXPmQQCVCQOQmNgZ8dBioAq_TmZq6jSWUc3pA3hAWpmqPfAbyNDzpLNed2H_Migk6IuTn0LY_y7x4nO0uXLFFR8uH9Kpj64sT1i3yt6Vrlwv8QKsyeQ0XDxX859Iv34ai-zi7rs-qp6uviHFDE4Dxj_djw-fA04RKrm8bzFtzNGK3cCiPF00WwYc_U_ps-DlDDx2KWkFQ',
+    tags: ['Pure Veg', 'White Butter Idli', 'Babai Dosa', 'Heritage', 'Legendary', 'Breakfast'],
+    vibe: 'Casual',
+    vibes: ['Casual', 'Family', 'Lively'],
+    mustTry: 'Special Babai White Butter Idli with Ghee, Babai Ghee Dosa, Filter Coffee',
+    aiReasoning: 'Established in 1942, Babai Hotel is a sacred culinary institution for soft, steaming idlis topped with a generous dollop of fresh homemade white butter (venna) and fragrant pure ghee.',
+    aiInsight: 'Former Prime Ministers, presidents, and legendary film icons have made pilgrimages to this iconic temple of pure vegetarian Andhra tiffins.',
+    signatureDishes: [
+      {
+        id: 'bh-1',
+        name: 'Special Babai White Butter (Venna) Idli',
+        description: 'Steaming cloud-soft idlis crowned with freshly churned white butter, drenched in fragrant desi ghee and served with spicy karampodi & ginger chutney.',
+        price: '₹90',
+        matchScore: 99,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBwui69H2nqjfTLgjmnr4hgF3_fd2owLCO6kipXwZIXuD1IvjXPmQQCVCQOQmNgZ8dBioAq_TmZq6jSWUc3pA3hAWpmqPfAbyNDzpLNed2H_Migk6IuTn0LY_y7x4nO0uXLFFR8uH9Kpj64sT1i3yt6Vrlwv8QKsyeQ0XDxX859Iv34ai-zi7rs-qp6uviHFDE4Dxj_djw-fA04RKrm8bzFtzNGK3cCiPF00WwYc_U_ps-DlDDx2KWkFQ'
+      }
+    ],
+    phone: '(0866) 257-2244',
+    website: 'babaihotelvijayawada.com',
+    hours: '6:00 AM - 10:30 PM',
+    address: 'Gandhi Nagar, Near Alankar Theatre, Vijayawada',
+    mapImage: SOUTH_INDIA_MAP_IMAGE,
+    isVeg: true,
+    isPureVeg: true
+  },
+  {
+    id: 'sweet-magic-vijayawada',
+    name: 'Sweet Magic Pure Veg & Andhra Meals',
+    cuisine: 'Andhra Vegetarian • 100% Pure Veg Bhojanam & Tiffins',
+    neighborhood: 'Bandar Road / MG Road',
+    city: 'Vijayawada',
+    rating: 4.8,
+    reviewsCount: 14200,
+    priceRange: '$$',
+    priceForTwo: '₹450 for two',
+    distance: '2.2 km',
+    matchScore: 98,
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBwui69H2nqjfTLgjmnr4hgF3_fd2owLCO6kipXwZIXuD1IvjXPmQQCVCQOQmNgZ8dBioAq_TmZq6jSWUc3pA3hAWpmqPfAbyNDzpLNed2H_Migk6IuTn0LY_y7x4nO0uXLFFR8uH9Kpj64sT1i3yt6Vrlwv8QKsyeQ0XDxX859Iv34ai-zi7rs-qp6uviHFDE4Dxj_djw-fA04RKrm8bzFtzNGK3cCiPF00WwYc_U_ps-DlDDx2KWkFQ',
+    tags: ['Pure Veg', 'Andhra Bhojanam', 'Pesarattu Upma', 'Pootharekulu', 'Vegetarian', 'Family'],
+    vibe: 'Casual',
+    vibes: ['Casual', 'Family'],
+    mustTry: 'Grand Andhra Pure Veg Bhojanam, Ghee Pesarattu Upma, Bellam Pootharekulu',
+    aiReasoning: 'Celebrated destination for the finest 18-course authentic Andhra Vegetarian Thali served on banana leaves with homemade gun powders, pure ghee, and traditional sweets.',
+    aiInsight: 'A quintessential Vijayawada culinary experience renowned for pristine hygiene, rich Podi-Ghee combinations, and pure ghee sweets.',
+    signatureDishes: [
+      {
+        id: 'sm-1',
+        name: 'Grand Andhra Pure Veg Bhojanam Thali',
+        description: 'Royal 18-dish feast with hot sona masoori rice, melted ghee, Kandi Podi, Gongura Pachadi, Sambar, Rasam, Majjiga Pulusu, Perugu, and fresh Poothareku sweet.',
+        price: '₹240',
+        matchScore: 98,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBwui69H2nqjfTLgjmnr4hgF3_fd2owLCO6kipXwZIXuD1IvjXPmQQCVCQOQmNgZ8dBioAq_TmZq6jSWUc3pA3hAWpmqPfAbyNDzpLNed2H_Migk6IuTn0LY_y7x4nO0uXLFFR8uH9Kpj64sT1i3yt6Vrlwv8QKsyeQ0XDxX859Iv34ai-zi7rs-qp6uviHFDE4Dxj_djw-fA04RKrm8bzFtzNGK3cCiPF00WwYc_U_ps-DlDDx2KWkFQ'
+      }
+    ],
+    phone: '(0866) 662-8888',
+    website: 'sweetmagicvijayawada.com',
+    hours: '7:00 AM - 11:00 PM',
+    address: 'MG Road, Labbipet, Vijayawada',
+    mapImage: SOUTH_INDIA_MAP_IMAGE,
+    isVeg: true,
+    isPureVeg: true
+  },
+  {
+    id: 'minerva-grand-blue-fox-vijayawada',
+    name: 'Blue Fox - Minerva Grand Vijayawada',
+    cuisine: 'Andhra Coastal & Multi-Cuisine • Fine Dining',
+    neighborhood: 'MG Road, Labbipet',
+    city: 'Vijayawada',
+    rating: 4.7,
+    reviewsCount: 8900,
+    priceRange: '$$$',
+    priceForTwo: '₹1,300 for two',
+    distance: '3.0 km',
+    matchScore: 95,
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBEzv6O9EUChnwzYjv-YVzn5mfNxBBi8PHb9bY0OrVjdoL6hgDHwxg2PdbxZuIvRRztf_4wRcSSQLonr8nTO7DIx8n_olI5u0gWEsiFYF3Eett6K129Xn0u2wGxYRK1GT9O-TERS0FoqyRZZcrbIykaPWZgQ1KS1ZJ7rpZiuh-YjiVfXFSEjyP5Z5GWktiKMD3tE-yodXgkrMjZgS4KN_44rnp2KemqpnSpb2wGb9u-ZotFf2s02KwbLw',
+    tags: ['Ulavacharu Biryani', 'Fine Dining', 'Date Night', 'Seafood', 'Family'],
+    vibe: 'Romantic',
+    vibes: ['Romantic', 'Business', 'Lively'],
+    mustTry: 'Ulavacharu Chicken Dum Biryani, Royyala Iguru, Paneer Butter Masala',
+    aiReasoning: 'Premier upscale dining venue on Vijayawada’s MG Road famous for authentic Ulavacharu (horse gram) biryani, rich coastal curries, and refined ambiance.',
+    aiInsight: 'The top choice in Vijayawada for family get-togethers and executive business dinners.',
+    signatureDishes: [
+      {
+        id: 'bf-vja-1',
+        name: 'Special Ulavacharu Chicken Biryani',
+        description: 'Fragrant basmati rice infused with slow-simmered rich Ulavacharu broth, tender spiced chicken, caramelized onions, and house raita.',
+        price: '₹390',
+        matchScore: 95,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDf6EsMkuk84g_5EPYKRo6ZG-sz_lvsN4pzNG9RRC3s11lJA2pSJ6jSf6_fnB8JMpGACPifHHoa4dVuo90RUewAehsl0LUCOFLt-YS4V3EMAPcPfZ7_pfwRs2GRBH6r65LAeobsQrOanTvmEJBk6Iyd0Xr_CnK7TcP1H9v_2ovvQH11sFktxuTnbpHu4UC7CqSWi7Yr9e3hYSNo9FbLTkp0k3PXjXQZtzY4ozIIIh0TZe_P8qCTAXeTAQ'
+      }
+    ],
+    phone: '(0866) 667-8888',
+    website: 'minervagrand.com/vijayawada',
+    hours: '12:00 PM - 3:30 PM, 7:00 PM - 11:00 PM',
+    address: 'Opp. PWD Grounds, MG Road, Vijayawada',
+    mapImage: SOUTH_INDIA_MAP_IMAGE,
+    isVeg: false,
+    isPureVeg: false
+  },
+  {
+    id: 'cross-roads-vijayawada',
+    name: 'Cross Roads Restaurant',
+    cuisine: 'Fiery Andhra & Mughlai • Natukodi & Biryani',
+    neighborhood: 'Siddhartha Nagar / Labbipet',
+    city: 'Vijayawada',
+    rating: 4.8,
+    reviewsCount: 11600,
+    priceRange: '$$',
+    priceForTwo: '₹650 for two',
+    distance: '2.8 km',
+    matchScore: 97,
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCp_SfwVODp3oDSv97exBU9aXRisDCpbE8JVk5Y6OmcIpsiuDK9EnEB-dhEbq6bxZe9fy-X8YynvuuyNZqrLl-V64qVlUKe6lDX6L0ao1XTVhxkBONB0cz4y4YVNixIBEPp7HXKSjjnr012etDr9SamZ1Mw_Tldd2g1dRt4Bgr70VnRKdZqI0sPpOIa-_65hthlP2SNYrekzb0WacTMNXHdJITvzyTcQwqSIlKqlxIHAXb2B7M6pu1aCA',
+    tags: ['Natukodi Biryani', 'Gongura Mamsam', 'Fiery Andhra', 'Spicy', 'Legendary'],
+    vibe: 'Lively',
+    vibes: ['Lively', 'Casual'],
+    mustTry: 'Fiery Natukodi Pulao, Gongura Mutton, Pepper Prawns, Avakaya Biryani',
+    aiReasoning: 'A beloved hotspot for spicy Andhra food connoisseurs, famous for country chicken (natukodi) prepared with fiery Guntur red chillies and slow-cooked pulaos.',
+    aiInsight: 'Unmatched spice levels and authentic Krishna delta flavors that satisfy every Andhra food lover.',
+    signatureDishes: [
+      {
+        id: 'cr-1',
+        name: 'Andhra Special Natukodi Biryani Pulao',
+        description: 'Country chicken slow roasted with shallots, crushed Guntur chillies, black pepper, and fragrant seeraga samba rice.',
+        price: '₹380',
+        matchScore: 97,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCp_SfwVODp3oDSv97exBU9aXRisDCpbE8JVk5Y6OmcIpsiuDK9EnEB-dhEbq6bxZe9fy-X8YynvuuyNZqrLl-V64qVlUKe6lDX6L0ao1XTVhxkBONB0cz4y4YVNixIBEPp7HXKSjjnr012etDr9SamZ1Mw_Tldd2g1dRt4Bgr70VnRKdZqI0sPpOIa-_65hthlP2SNYrekzb0WacTMNXHdJITvzyTcQwqSIlKqlxIHAXb2B7M6pu1aCA'
+      }
+    ],
+    phone: '(0866) 247-4455',
+    website: 'crossroadsrestaurants.in',
+    hours: '11:30 AM - 11:00 PM',
+    address: 'Near Siddhartha College, Pinnamaneni Polyclinic Road, Vijayawada',
+    mapImage: SOUTH_INDIA_MAP_IMAGE,
+    isVeg: false,
+    isPureVeg: false
+  },
+  {
+    id: 'hotel-manorama-vijayawada',
+    name: 'Hotel Manorama - Sri Srinivas',
+    cuisine: 'South Indian • 100% Pure Veg Heritage Meals & Tiffins',
+    neighborhood: 'Governorpet / MG Road',
+    city: 'Vijayawada',
+    rating: 4.8,
+    reviewsCount: 16400,
+    priceRange: '$$',
+    priceForTwo: '₹380 for two',
+    distance: '1.2 km',
+    matchScore: 98,
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBwui69H2nqjfTLgjmnr4hgF3_fd2owLCO6kipXwZIXuD1IvjXPmQQCVCQOQmNgZ8dBioAq_TmZq6jSWUc3pA3hAWpmqPfAbyNDzpLNed2H_Migk6IuTn0LY_y7x4nO0uXLFFR8uH9Kpj64sT1i3yt6Vrlwv8QKsyeQ0XDxX859Iv34ai-zi7rs-qp6uviHFDE4Dxj_djw-fA04RKrm8bzFtzNGK3cCiPF00WwYc_U_ps-DlDDx2KWkFQ',
+    tags: ['Pure Veg', 'Andhra Bhojanam', 'Ghee Karam Dosa', 'Heritage', 'Family'],
+    vibe: 'Casual',
+    vibes: ['Casual', 'Family'],
+    mustTry: 'Manorama Special Andhra Bhojanam, Ghee Sambar Idli, MLA Pesarattu',
+    aiReasoning: 'Operating since 1968 in Governorpet, Manorama is Vijayawada’s revered temple of pure vegetarian Andhra hospitality, serving unlimited leaf banquets and ghee-laden morning tiffins.',
+    aiInsight: 'The historic culinary meeting place for dignitaries and food lovers in the heart of Vijayawada.',
+    signatureDishes: [
+      {
+        id: 'hmv-1',
+        name: 'Grand Manorama Andhra Bhojanam',
+        description: 'Unlimited traditional thali with hot rice, cow ghee, gun powder, avakaya, gongura, bendakaya fry, tomato pappu, sambar, rasam, and payasam.',
+        price: '₹220',
+        matchScore: 99,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBwui69H2nqjfTLgjmnr4hgF3_fd2owLCO6kipXwZIXuD1IvjXPmQQCVCQOQmNgZ8dBioAq_TmZq6jSWUc3pA3hAWpmqPfAbyNDzpLNed2H_Migk6IuTn0LY_y7x4nO0uXLFFR8uH9Kpj64sT1i3yt6Vrlwv8QKsyeQ0XDxX859Iv34ai-zi7rs-qp6uviHFDE4Dxj_djw-fA04RKrm8bzFtzNGK3cCiPF00WwYc_U_ps-DlDDx2KWkFQ'
+      },
+      {
+        id: 'hmv-2',
+        name: 'Ghee Sambar Vada Dip',
+        description: 'Crispy lentil donuts submerged in piping hot vegetable drumstick sambar garnished with fresh coriander and drizzled with ghee.',
+        price: '₹90',
+        matchScore: 97,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBwui69H2nqjfTLgjmnr4hgF3_fd2owLCO6kipXwZIXuD1IvjXPmQQCVCQOQmNgZ8dBioAq_TmZq6jSWUc3pA3hAWpmqPfAbyNDzpLNed2H_Migk6IuTn0LY_y7x4nO0uXLFFR8uH9Kpj64sT1i3yt6Vrlwv8QKsyeQ0XDxX859Iv34ai-zi7rs-qp6uviHFDE4Dxj_djw-fA04RKrm8bzFtzNGK3cCiPF00WwYc_U_ps-DlDDx2KWkFQ'
+      }
+    ],
+    phone: '(0866) 667-4455',
+    website: 'hotelmanoramavijayawada.com',
+    hours: '6:30 AM - 10:30 PM',
+    address: 'MG Road, Governorpet, Vijayawada',
+    mapImage: SOUTH_INDIA_MAP_IMAGE,
+    isVeg: true,
+    isPureVeg: true
+  },
+  {
+    id: 'gad-restaurant-gateway-vijayawada',
+    name: 'GAD - The Gateway Hotel',
+    cuisine: 'Coastal Andhra, Continental & Pan-Asian • Luxury Dining',
+    neighborhood: 'MG Road / Labbipet',
+    city: 'Vijayawada',
+    rating: 4.8,
+    reviewsCount: 8900,
+    priceRange: '$$$$',
+    priceForTwo: '₹1,800 for two',
+    distance: '2.0 km',
+    matchScore: 96,
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBEzv6O9EUChnwzYjv-YVzn5mfNxBBi8PHb9bY0OrVjdoL6hgDHwxg2PdbxZuIvRRztf_4wRcSSQLonr8nTO7DIx8n_olI5u0gWEsiFYF3Eett6K129Xn0u2wGxYRK1GT9O-TERS0FoqyRZZcrbIykaPWZgQ1KS1ZJ7rpZiuh-YjiVfXFSEjyP5Z5GWktiKMD3tE-yodXgkrMjZgS4KN_44rnp2KemqpnSpb2wGb9u-ZotFf2s02KwbLw',
+    tags: ['Luxury Buffet', 'Fine Dining', 'Date Night', 'Royal Andhra', 'Business'],
+    vibe: 'Romantic',
+    vibes: ['Romantic', 'Business'],
+    mustTry: 'Royyala Iguru, Krishna River Fish Curry, Grand Sunday Brunch Buffet',
+    aiReasoning: 'Vijayawada’s premier luxury 5-star dining venue offering elevated Andhra royal recipes with picturesque views and lavish multi-course buffets.',
+    aiInsight: 'The elite destination for business dinners, celebratory family banquets, and high-end culinary experiences in the city.',
+    signatureDishes: [
+      {
+        id: 'gad-1',
+        name: 'Royal Krishna River Fish Curry',
+        description: 'Fresh catch from the Krishna river simmered in tangy kokum-tamarind reduction, roasted shallots, and green chili paste.',
+        price: '₹520',
+        matchScore: 98,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBwlAvJp7sw8u4dpcwahZayRcygGCqTRyyo4oWTayr8GjPcS8JcMPDJL5994oBB3Wxlm0T-itPoZm7YCVnTG1UPhhDTTIBSS42ogp9lVZcRwzqYALEdPMVGOzNqOr0RKe-q-y4-LSmEfpa1dJMfRLXZjkR7WhgD7vPK5_Rn12aqWbNgDqC9vQB1uA7FVQuELkHGvgOZN0j7ZdJetBuXp43Nytk2zBF19oyYesA_BuAlHPIl2zQ2lkNjvA'
+      },
+      {
+        id: 'gad-2',
+        name: 'Gongura Royyala (Prawn) Pulao',
+        description: 'Jumbo river prawns tossed in tangy sorrel leaf (gongura) masala, layered with aged basmati rice and roasted cashews.',
+        price: '₹550',
+        matchScore: 97,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCp_SfwVODp3oDSv97exBU9aXRisDCpbE8JVk5Y6OmcIpsiuDK9EnEB-dhEbq6bxZe9fy-X8YynvuuyNZqrLl-V64qVlUKe6lDX6L0ao1XTVhxkBONB0cz4y4YVNixIBEPp7HXKSjjnr012etDr9SamZ1Mw_Tldd2g1dRt4Bgr70VnRKdZqI0sPpOIa-_65hthlP2SNYrekzb0WacTMNXHdJITvzyTcQwqSIlKqlxIHAXb2B7M6pu1aCA'
+      }
+    ],
+    phone: '(0866) 664-4444',
+    website: 'tajhotels.com/the-gateway-hotel-vijayawada',
+    hours: '24 Hours (Dining 7:00 AM - 11:30 PM)',
+    address: 'The Gateway Hotel, MG Road, Labbipet, Vijayawada',
+    mapImage: SOUTH_INDIA_MAP_IMAGE,
+    isVeg: false,
+    isPureVeg: false
+  },
+  {
+    id: 'seven-days-restaurant-vijayawada',
+    name: 'Seven Days Cafe & Restaurant',
+    cuisine: 'Andhra, North Indian & Continental • Family Dining',
+    neighborhood: 'Benz Circle / Ring Road',
+    city: 'Vijayawada',
+    rating: 4.7,
+    reviewsCount: 12100,
+    priceRange: '$$',
+    priceForTwo: '₹650 for two',
+    distance: '2.5 km',
+    matchScore: 96,
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCp_SfwVODp3oDSv97exBU9aXRisDCpbE8JVk5Y6OmcIpsiuDK9EnEB-dhEbq6bxZe9fy-X8YynvuuyNZqrLl-V64qVlUKe6lDX6L0ao1XTVhxkBONB0cz4y4YVNixIBEPp7HXKSjjnr012etDr9SamZ1Mw_Tldd2g1dRt4Bgr70VnRKdZqI0sPpOIa-_65hthlP2SNYrekzb0WacTMNXHdJITvzyTcQwqSIlKqlxIHAXb2B7M6pu1aCA',
+    tags: ['Pot Biryani', 'Kaju Paneer Curry', 'Benz Circle', 'Family Friendly'],
+    vibe: 'Lively',
+    vibes: ['Lively', 'Casual', 'Family'],
+    mustTry: 'Claypot Chicken Dum Biryani, Kaju Butter Masala, Crispy Corn Pepper Fry',
+    aiReasoning: 'A bustling multi-cuisine fixture near Benz Circle known for generous portions, rich gravies, clay pot biryanis, and vibrant youth-friendly atmosphere.',
+    aiInsight: 'The ideal casual hangout near Benz Circle for hearty family dinners and evening get-togethers.',
+    signatureDishes: [
+      {
+        id: 'sd-1',
+        name: 'Special Claypot Dum Biryani',
+        description: 'Marinated spiced chicken slow cooked in sealed earthen pot with aromatic long grain rice and fried onions.',
+        price: '₹320',
+        matchScore: 97,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDf6EsMkuk84g_5EPYKRo6ZG-sz_lvsN4pzNG9RRC3s11lJA2pSJ6jSf6_fnB8JMpGACPifHHoa4dVuo90RUewAehsl0LUCOFLt-YS4V3EMAPcPfZ7_pfwRs2GRBH6r65LAeobsQrOanTvmEJBk6Iyd0Xr_CnK7TcP1H9v_2ovvQH11sFktxuTnbpHu4UC7CqSWi7Yr9e3hYSNo9FbLTkp0k3PXjXQZtzY4ozIIIh0TZe_P8qCTAXeTAQ'
+      },
+      {
+        id: 'sd-2',
+        name: 'Andhra Spiced Cashew (Kaju) Curry',
+        description: 'Whole roasted golden cashews simmered in rich spiced onion-tomato gravy with butter and fresh cream.',
+        price: '₹280',
+        matchScore: 95,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBwui69H2nqjfTLgjmnr4hgF3_fd2owLCO6kipXwZIXuD1IvjXPmQQCVCQOQmNgZ8dBioAq_TmZq6jSWUc3pA3hAWpmqPfAbyNDzpLNed2H_Migk6IuTn0LY_y7x4nO0uXLFFR8uH9Kpj64sT1i3yt6Vrlwv8QKsyeQ0XDxX859Iv34ai-zi7rs-qp6uviHFDE4Dxj_djw-fA04RKrm8bzFtzNGK3cCiPF00WwYc_U_ps-DlDDx2KWkFQ'
+      }
+    ],
+    phone: '(0866) 249-7788',
+    website: 'sevendaysvijayawada.com',
+    hours: '11:00 AM - 11:00 PM',
+    address: 'Near Benz Circle, Ring Road, Vijayawada',
+    mapImage: SOUTH_INDIA_MAP_IMAGE,
+    isVeg: false,
+    isPureVeg: false
+  },
+
+  // --- GUNTUR (Andhra Pradesh) ---
+  {
+    id: 'sankar-vilas-guntur',
+    name: 'Sankar Vilas Hotel',
+    cuisine: 'South Indian • 100% Pure Veg Brahmin Tiffins',
+    neighborhood: 'Brodipet 3rd Line',
+    city: 'Guntur',
+    rating: 4.9,
+    reviewsCount: 17800,
+    priceRange: '$',
+    priceForTwo: '₹200 for two',
+    distance: '1.1 km',
+    matchScore: 99,
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBwui69H2nqjfTLgjmnr4hgF3_fd2owLCO6kipXwZIXuD1IvjXPmQQCVCQOQmNgZ8dBioAq_TmZq6jSWUc3pA3hAWpmqPfAbyNDzpLNed2H_Migk6IuTn0LY_y7x4nO0uXLFFR8uH9Kpj64sT1i3yt6Vrlwv8QKsyeQ0XDxX859Iv34ai-zi7rs-qp6uviHFDE4Dxj_djw-fA04RKrm8bzFtzNGK3cCiPF00WwYc_U_ps-DlDDx2KWkFQ',
+    tags: ['Pure Veg', 'Ghee Masala Dosa', 'Brodipet', 'Filter Coffee', 'Legendary', 'Heritage'],
+    vibe: 'Casual',
+    vibes: ['Casual', 'Lively', 'Family'],
+    mustTry: 'Crispy Ghee Masala Dosa, Guntur Ghee Upma, Rava Onion Dosa, Degree Filter Coffee',
+    aiReasoning: 'Founded in the 1950s in Brodipet, Sankar Vilas is an undisputed institution. Famous across Andhra for wafer-thin, crisp ghee-doused dosas and aromatic degree filter coffee.',
+    aiInsight: 'The holy grail of pure vegetarian breakfast tiffins in Guntur, serving generations with uncompromising traditional recipes.',
+    signatureDishes: [
+      {
+        id: 'sv-1',
+        name: 'Special Guntur Ghee Masala Dosa',
+        description: 'Wafer-thin golden crepe generously roasted in fragrant pure cow ghee, stuffed with spiced potato masala and served with legendary coconut & tomato chutneys.',
+        price: '₹85',
+        matchScore: 99,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBwui69H2nqjfTLgjmnr4hgF3_fd2owLCO6kipXwZIXuD1IvjXPmQQCVCQOQmNgZ8dBioAq_TmZq6jSWUc3pA3hAWpmqPfAbyNDzpLNed2H_Migk6IuTn0LY_y7x4nO0uXLFFR8uH9Kpj64sT1i3yt6Vrlwv8QKsyeQ0XDxX859Iv34ai-zi7rs-qp6uviHFDE4Dxj_djw-fA04RKrm8bzFtzNGK3cCiPF00WwYc_U_ps-DlDDx2KWkFQ'
+      }
+    ],
+    phone: '(0863) 223-3888',
+    website: 'sankarvilasguntur.com',
+    hours: '6:00 AM - 10:30 PM',
+    address: 'Brodipet 3rd Line, Near Naaz Center, Guntur',
+    mapImage: SOUTH_INDIA_MAP_IMAGE,
+    isVeg: true,
+    isPureVeg: true
+  },
+  {
+    id: 'sri-krishna-vilas-guntur',
+    name: 'Sri Krishna Vilas Pure Veg',
+    cuisine: 'Traditional South Indian • 100% Pure Veg',
+    neighborhood: 'Station Road / Old Guntur',
+    city: 'Guntur',
+    rating: 4.8,
+    reviewsCount: 9800,
+    priceRange: '$',
+    priceForTwo: '₹180 for two',
+    distance: '1.7 km',
+    matchScore: 96,
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBwui69H2nqjfTLgjmnr4hgF3_fd2owLCO6kipXwZIXuD1IvjXPmQQCVCQOQmNgZ8dBioAq_TmZq6jSWUc3pA3hAWpmqPfAbyNDzpLNed2H_Migk6IuTn0LY_y7x4nO0uXLFFR8uH9Kpj64sT1i3yt6Vrlwv8QKsyeQ0XDxX859Iv34ai-zi7rs-qp6uviHFDE4Dxj_djw-fA04RKrm8bzFtzNGK3cCiPF00WwYc_U_ps-DlDDx2KWkFQ',
+    tags: ['Pure Veg', 'Ghee Pongal', 'Medu Vada', 'Breakfast', 'Vegetarian'],
+    vibe: 'Casual',
+    vibes: ['Casual', 'Family'],
+    mustTry: 'Ghee Ven Pongal with Cashews, Crispy Medu Vada, Spicy Guntur Peanut Chutney',
+    aiReasoning: 'Seven-decade legacy in Guntur known for piping hot cashew ghee pongal, crunchy golden vadas, and fiery fresh chutneys prepared fresh every morning.',
+    aiInsight: 'An authentic breakfast jewel where locals gather for traditional South Indian morning comfort.',
+    signatureDishes: [
+      {
+        id: 'skv-1',
+        name: 'Ghee Ven Pongal with Medu Vada Combo',
+        description: 'Creamy moong dal and rice mash roasted in pure ghee with whole black pepper, cumin and fried cashews, served with hot sambar and crispy vada.',
+        price: '₹95',
+        matchScore: 96,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBwui69H2nqjfTLgjmnr4hgF3_fd2owLCO6kipXwZIXuD1IvjXPmQQCVCQOQmNgZ8dBioAq_TmZq6jSWUc3pA3hAWpmqPfAbyNDzpLNed2H_Migk6IuTn0LY_y7x4nO0uXLFFR8uH9Kpj64sT1i3yt6Vrlwv8QKsyeQ0XDxX859Iv34ai-zi7rs-qp6uviHFDE4Dxj_djw-fA04RKrm8bzFtzNGK3cCiPF00WwYc_U_ps-DlDDx2KWkFQ'
+      }
+    ],
+    phone: '(0863) 222-1144',
+    website: 'srikrishnavilasguntur.com',
+    hours: '6:30 AM - 10:00 PM',
+    address: 'Station Road, Near Guntur Railway Junction, Guntur',
+    mapImage: SOUTH_INDIA_MAP_IMAGE,
+    isVeg: true,
+    isPureVeg: true
+  },
+  {
+    id: 'viceroy-restaurant-guntur',
+    name: 'Viceroy Restaurant & Biryani House',
+    cuisine: 'Spicy Andhra & Guntur Specials • Mutton & Biryani',
+    neighborhood: 'Lakshmipuram Main Road',
+    city: 'Guntur',
+    rating: 4.8,
+    reviewsCount: 13400,
+    priceRange: '$$',
+    priceForTwo: '₹580 for two',
+    distance: '2.4 km',
+    matchScore: 98,
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDf6EsMkuk84g_5EPYKRo6ZG-sz_lvsN4pzNG9RRC3s11lJA2pSJ6jSf6_fnB8JMpGACPifHHoa4dVuo90RUewAehsl0LUCOFLt-YS4V3EMAPcPfZ7_pfwRs2GRBH6r65LAeobsQrOanTvmEJBk6Iyd0Xr_CnK7TcP1H9v_2ovvQH11sFktxuTnbpHu4UC7CqSWi7Yr9e3hYSNo9FbLTkp0k3PXjXQZtzY4ozIIIh0TZe_P8qCTAXeTAQ',
+    tags: ['Guntur Gongura Mutton', 'Mirchi Biryani', 'Spicy', 'Legendary', 'Family'],
+    vibe: 'Lively',
+    vibes: ['Lively', 'Casual', 'Family'],
+    mustTry: 'Guntur Gongura Mutton Biryani, Fiery Guntur Mirchi Prawns, Natukodi Roast',
+    aiReasoning: 'The definitive culinary landmark in Guntur for authentic spice, cooked with world-famous Guntur Sannam chillies and tangy sour gongura leaves.',
+    aiInsight: 'Renowned throughout the state for setting the benchmark in authentic spicy Andhra meat curries and fragrant biryanis.',
+    signatureDishes: [
+      {
+        id: 'vr-1',
+        name: 'Guntur Special Gongura Mutton Biryani',
+        description: 'Tender mutton chunks slow cooked in sour gongura paste, fiery red chillies, and aromatic basmati rice.',
+        price: '₹360',
+        matchScore: 98,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDf6EsMkuk84g_5EPYKRo6ZG-sz_lvsN4pzNG9RRC3s11lJA2pSJ6jSf6_fnB8JMpGACPifHHoa4dVuo90RUewAehsl0LUCOFLt-YS4V3EMAPcPfZ7_pfwRs2GRBH6r65LAeobsQrOanTvmEJBk6Iyd0Xr_CnK7TcP1H9v_2ovvQH11sFktxuTnbpHu4UC7CqSWi7Yr9e3hYSNo9FbLTkp0k3PXjXQZtzY4ozIIIh0TZe_P8qCTAXeTAQ'
+      }
+    ],
+    phone: '(0863) 224-5500',
+    website: 'viceroyguntur.com',
+    hours: '11:30 AM - 11:00 PM',
+    address: 'Lakshmipuram Main Road, Near Collectorate, Guntur',
+    mapImage: SOUTH_INDIA_MAP_IMAGE,
+    isVeg: false,
+    isPureVeg: false
+  },
+  {
+    id: 'garam-masala-guntur',
+    name: 'Garam Masala Multi-Cuisine',
+    cuisine: 'Andhra & Tandoori • Ragi Sangati & Curries',
+    neighborhood: 'Arundelpet / Ring Road',
+    city: 'Guntur',
+    rating: 4.7,
+    reviewsCount: 7600,
+    priceRange: '$$',
+    priceForTwo: '₹600 for two',
+    distance: '3.2 km',
+    matchScore: 94,
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCp_SfwVODp3oDSv97exBU9aXRisDCpbE8JVk5Y6OmcIpsiuDK9EnEB-dhEbq6bxZe9fy-X8YynvuuyNZqrLl-V64qVlUKe6lDX6L0ao1XTVhxkBONB0cz4y4YVNixIBEPp7HXKSjjnr012etDr9SamZ1Mw_Tldd2g1dRt4Bgr70VnRKdZqI0sPpOIa-_65hthlP2SNYrekzb0WacTMNXHdJITvzyTcQwqSIlKqlxIHAXb2B7M6pu1aCA',
+    tags: ['Ragi Sangati', 'Natukodi Pulusu', 'Guntur Chicken 65', 'Family'],
+    vibe: 'Casual',
+    vibes: ['Casual', 'Family'],
+    mustTry: 'Ragi Sangati with Natukodi Pulusu, Guntur Chilli Chicken, Andhra Thali',
+    aiReasoning: 'Famous for authentic Rayalaseema-style Ragi Sangati served with steaming hot country chicken curry and crispy Guntur red chilli fries.',
+    aiInsight: 'Popular dining spot in Arundelpet for hearty rustic Andhra meals and spicy starters.',
+    signatureDishes: [
+      {
+        id: 'gm-1',
+        name: 'Rayalaseema Ragi Sangati & Natukodi Curry',
+        description: 'Nutritious finger millet ball served with steaming spicy country chicken curry cooked in cold-pressed oil and roasted spices.',
+        price: '₹340',
+        matchScore: 95,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCp_SfwVODp3oDSv97exBU9aXRisDCpbE8JVk5Y6OmcIpsiuDK9EnEB-dhEbq6bxZe9fy-X8YynvuuyNZqrLl-V64qVlUKe6lDX6L0ao1XTVhxkBONB0cz4y4YVNixIBEPp7HXKSjjnr012etDr9SamZ1Mw_Tldd2g1dRt4Bgr70VnRKdZqI0sPpOIa-_65hthlP2SNYrekzb0WacTMNXHdJITvzyTcQwqSIlKqlxIHAXb2B7M6pu1aCA'
+      }
+    ],
+    phone: '(0863) 235-9900',
+    website: 'garammasalaguntur.com',
+    hours: '12:00 PM - 3:30 PM, 7:00 PM - 11:00 PM',
+    address: 'Ring Road, Near Arundelpet 6th Line, Guntur',
+    mapImage: SOUTH_INDIA_MAP_IMAGE,
+    isVeg: false,
+    isPureVeg: false
+  },
+  {
+    id: 'subham-pure-veg-guntur',
+    name: 'Hotel Subham Pure Veg',
+    cuisine: 'South Indian • 100% Pure Veg Tiffins & Meals',
+    neighborhood: 'Lakshmipuram Main Road',
+    city: 'Guntur',
+    rating: 4.8,
+    reviewsCount: 13600,
+    priceRange: '$',
+    priceForTwo: '₹220 for two',
+    distance: '1.4 km',
+    matchScore: 98,
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBwui69H2nqjfTLgjmnr4hgF3_fd2owLCO6kipXwZIXuD1IvjXPmQQCVCQOQmNgZ8dBioAq_TmZq6jSWUc3pA3hAWpmqPfAbyNDzpLNed2H_Migk6IuTn0LY_y7x4nO0uXLFFR8uH9Kpj64sT1i3yt6Vrlwv8QKsyeQ0XDxX859Iv34ai-zi7rs-qp6uviHFDE4Dxj_djw-fA04RKrm8bzFtzNGK3cCiPF00WwYc_U_ps-DlDDx2KWkFQ',
+    tags: ['Pure Veg', 'Ghee Karam Dosa', 'Poha Upma', 'Breakfast', 'Family'],
+    vibe: 'Casual',
+    vibes: ['Casual', 'Family'],
+    mustTry: 'Special Subham Ghee Karam Dosa, Rava Dosa with Allam Pachadi, Filter Coffee',
+    aiReasoning: 'A top-rated vegetarian destination in Lakshmipuram famous for crispy dosas lavishly basted with homemade ghee and spicy Guntur red chili paste.',
+    aiInsight: 'Clean and bustling pure veg tiffin center with fast service and fresh chutneys.',
+    signatureDishes: [
+      {
+        id: 'spv-g1',
+        name: 'Special Guntur Ghee Karam Dosa',
+        description: 'Crisp thin crepe roasted with pure desi ghee and fiery Guntur chili-garlic paste, served with peanut and ginger chutneys.',
+        price: '₹95',
+        matchScore: 99,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBwui69H2nqjfTLgjmnr4hgF3_fd2owLCO6kipXwZIXuD1IvjXPmQQCVCQOQmNgZ8dBioAq_TmZq6jSWUc3pA3hAWpmqPfAbyNDzpLNed2H_Migk6IuTn0LY_y7x4nO0uXLFFR8uH9Kpj64sT1i3yt6Vrlwv8QKsyeQ0XDxX859Iv34ai-zi7rs-qp6uviHFDE4Dxj_djw-fA04RKrm8bzFtzNGK3cCiPF00WwYc_U_ps-DlDDx2KWkFQ'
+      },
+      {
+        id: 'spv-g2',
+        name: 'Ghee Rava Onion Masala Dosa',
+        description: 'Golden semolina-crusted lacy crepe studded with chopped green chillies, onions, cumin and filled with spiced potato masala.',
+        price: '₹105',
+        matchScore: 97,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBwui69H2nqjfTLgjmnr4hgF3_fd2owLCO6kipXwZIXuD1IvjXPmQQCVCQOQmNgZ8dBioAq_TmZq6jSWUc3pA3hAWpmqPfAbyNDzpLNed2H_Migk6IuTn0LY_y7x4nO0uXLFFR8uH9Kpj64sT1i3yt6Vrlwv8QKsyeQ0XDxX859Iv34ai-zi7rs-qp6uviHFDE4Dxj_djw-fA04RKrm8bzFtzNGK3cCiPF00WwYc_U_ps-DlDDx2KWkFQ'
+      }
+    ],
+    phone: '(0863) 225-8811',
+    website: 'subhampureveg.com',
+    hours: '6:30 AM - 10:30 PM',
+    address: 'Near Old Bus Stand, Lakshmipuram, Guntur',
+    mapImage: SOUTH_INDIA_MAP_IMAGE,
+    isVeg: true,
+    isPureVeg: true
+  },
+  {
+    id: 'flavour-of-andhra-guntur',
+    name: 'Flavours of Andhra - Hotel Grand Nagarjuna',
+    cuisine: 'Authentic Andhra & Rayalaseema • Fine Dining',
+    neighborhood: 'Brodipet 4/7',
+    city: 'Guntur',
+    rating: 4.8,
+    reviewsCount: 11400,
+    priceRange: '$$$',
+    priceForTwo: '₹950 for two',
+    distance: '1.3 km',
+    matchScore: 97,
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCp_SfwVODp3oDSv97exBU9aXRisDCpbE8JVk5Y6OmcIpsiuDK9EnEB-dhEbq6bxZe9fy-X8YynvuuyNZqrLl-V64qVlUKe6lDX6L0ao1XTVhxkBONB0cz4y4YVNixIBEPp7HXKSjjnr012etDr9SamZ1Mw_Tldd2g1dRt4Bgr70VnRKdZqI0sPpOIa-_65hthlP2SNYrekzb0WacTMNXHdJITvzyTcQwqSIlKqlxIHAXb2B7M6pu1aCA',
+    tags: ['Guntur Mirchi Kodi', 'Ulavacharu Biryani', 'Fine Dining', 'Family', 'Cocktails'],
+    vibe: 'Business',
+    vibes: ['Business', 'Family'],
+    mustTry: 'Guntur Mirchi Kodi Vepudu, Ulavacharu Chicken Pulao, Gongura Royyalu',
+    aiReasoning: 'The fine dining pride of Guntur located in Hotel Grand Nagarjuna, celebrated for fiery local chilli chicken roasts and regal Telugu banquets.',
+    aiInsight: 'The top choice in Brodipet for executive lunches and high-class regional Andhra dining.',
+    signatureDishes: [
+      {
+        id: 'foa-1',
+        name: 'Guntur Mirapakaaya Kodi Vepudu',
+        description: 'Tender chicken tossed with fiery sun-dried Guntur 334 red chillies, curry leaves, garlic and cold-pressed sesame oil.',
+        price: '₹340',
+        matchScore: 99,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCp_SfwVODp3oDSv97exBU9aXRisDCpbE8JVk5Y6OmcIpsiuDK9EnEB-dhEbq6bxZe9fy-X8YynvuuyNZqrLl-V64qVlUKe6lDX6L0ao1XTVhxkBONB0cz4y4YVNixIBEPp7HXKSjjnr012etDr9SamZ1Mw_Tldd2g1dRt4Bgr70VnRKdZqI0sPpOIa-_65hthlP2SNYrekzb0WacTMNXHdJITvzyTcQwqSIlKqlxIHAXb2B7M6pu1aCA'
+      },
+      {
+        id: 'foa-2',
+        name: 'Royal Ulavacharu Chicken Dum Biryani',
+        description: 'Basmati rice infused with rich horsegram essence, spiced chicken pieces, caramelized onions and roasted cashew nuts.',
+        price: '₹360',
+        matchScore: 97,
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDf6EsMkuk84g_5EPYKRo6ZG-sz_lvsN4pzNG9RRC3s11lJA2pSJ6jSf6_fnB8JMpGACPifHHoa4dVuo90RUewAehsl0LUCOFLt-YS4V3EMAPcPfZ7_pfwRs2GRBH6r65LAeobsQrOanTvmEJBk6Iyd0Xr_CnK7TcP1H9v_2ovvQH11sFktxuTnbpHu4UC7CqSWi7Yr9e3hYSNo9FbLTkp0k3PXjXQZtzY4ozIIIh0TZe_P8qCTAXeTAQ'
+      }
+    ],
+    phone: '(0863) 664-5555',
+    website: 'grandnagarjunaguntur.com',
+    hours: '12:00 PM - 3:30 PM, 7:00 PM - 11:00 PM',
+    address: 'Hotel Grand Nagarjuna, 4/7 Brodipet, Guntur',
+    mapImage: SOUTH_INDIA_MAP_IMAGE,
+    isVeg: false,
+    isPureVeg: false
   }
 ];
+
+export const CITY_COORDINATES: Record<string, { lat: number; lng: number; zoom: number }> = {
+  'All Cities': { lat: 14.5000, lng: 79.2000, zoom: 6 },
+  'Hyderabad': { lat: 17.4200, lng: 78.4480, zoom: 12 },
+  'Bangalore': { lat: 12.9716, lng: 77.5946, zoom: 12 },
+  'Chennai': { lat: 13.0500, lng: 80.2400, zoom: 12 },
+  'Kochi': { lat: 9.9800, lng: 76.2600, zoom: 12 },
+  'Visakhapatnam': { lat: 17.7200, lng: 83.3000, zoom: 12 },
+  'Nellore': { lat: 14.4426, lng: 79.9865, zoom: 13 },
+  'Vijayawada': { lat: 16.5100, lng: 80.6400, zoom: 13 },
+  'Guntur': { lat: 16.3050, lng: 80.4400, zoom: 13 },
+};
+
+export const RESTAURANT_COORDINATES: Record<string, { lat: number; lng: number }> = {
+  // Hyderabad
+  'paradise-biryani': { lat: 17.4411, lng: 78.4983 },
+  'chutneys': { lat: 17.4156, lng: 78.4357 },
+  'tatva-fine-dining-veg': { lat: 17.4087, lng: 78.4124 },
+  'roastery-coffee-house': { lat: 17.4293, lng: 78.4116 },
+  'bawarchi-restaurant': { lat: 17.4029, lng: 78.4965 },
+  'concu': { lat: 17.4255, lng: 78.4068 },
+  'kumi-modern-japanese': { lat: 17.4338, lng: 78.3970 },
+  'cafe-bahar': { lat: 17.3995, lng: 78.4870 },
+  'shah-ghouse-cafe': { lat: 17.3945, lng: 78.4125 },
+  'minerva-coffee-shop-hyderabad': { lat: 17.4022, lng: 78.4820 },
+  'ulavacharu-restaurant': { lat: 17.4312, lng: 78.4080 },
+  
+  // Bangalore
+  'ctr-shri-sagar': { lat: 13.0033, lng: 77.5684 },
+  'mavalli-tiffin-room-mtr': { lat: 12.9554, lng: 77.5855 },
+  'grasshopper-bangalore': { lat: 12.8687, lng: 77.5939 },
+  'toscano-ub-city': { lat: 12.9719, lng: 77.5958 },
+  'brahmins-coffee-bar': { lat: 12.9468, lng: 77.5714 },
+  'nagarjuna-andhra-meals': { lat: 12.9712, lng: 77.6080 },
+  'meghana-foods-bangalore': { lat: 12.9352, lng: 77.6180 },
+  
+  // Chennai
+  'murugan-idli-shop': { lat: 13.0405, lng: 80.2337 },
+  'anjappar-chettinad': { lat: 13.0569, lng: 80.2520 },
+  'amethyst-cafe': { lat: 13.0543, lng: 80.2588 },
+  'saravana-bhavan-chennai': { lat: 13.0410, lng: 80.2580 },
+  'dindigul-thalappakatti-chennai': { lat: 13.0440, lng: 80.2395 },
+  'junior-kuppanna-chennai': { lat: 13.0520, lng: 80.2480 },
+  
+  // Kochi
+  'paragon-restaurant-kochi': { lat: 9.9982, lng: 76.2828 },
+  'kashi-art-cafe': { lat: 9.9658, lng: 76.2429 },
+  'malabar-cafe-grand-hyatt': { lat: 9.9877, lng: 76.2625 },
+  'dhe-puttu-kochi': { lat: 10.0240, lng: 76.3080 },
+  'grand-pavilion-kochi': { lat: 9.9720, lng: 76.2840 },
+  'brindhavan-vegetarian-kochi': { lat: 10.0050, lng: 76.3120 },
+  
+  // Visakhapatnam
+  'dharani-daspalla': { lat: 17.7126, lng: 83.3032 },
+  'venkatadri-vantillu-vizag': { lat: 17.7260, lng: 83.3180 },
+  'sea-inn-raju-gari-dhaba': { lat: 17.7856, lng: 83.3854 },
+  'sai-ram-parlour-vizag': { lat: 17.7215, lng: 83.3021 },
+  'spicy-venue-vizag': { lat: 17.7230, lng: 83.3160 },
+  'tycoon-restaurant-vizag': { lat: 17.7255, lng: 83.3195 },
+  
+  // Nellore
+  'murali-krishna-nellore': { lat: 14.4426, lng: 79.9865 },
+  'mayuri-chepala-pulusu': { lat: 14.4492, lng: 79.9810 },
+  'komala-vilas-nellore': { lat: 14.4455, lng: 79.9840 },
+  'blue-fox-minerva-nellore': { lat: 14.4410, lng: 79.9820 },
+  'raghavendra-bhavan-nellore': { lat: 14.4440, lng: 79.9870 },
+  'madras-cafe-nellore': { lat: 14.4465, lng: 79.9830 },
+  'santhi-sweets-nellore': { lat: 14.4435, lng: 79.9855 },
+  
+  // Vijayawada
+  'babai-hotel-vijayawada': { lat: 16.5186, lng: 80.6200 },
+  'sweet-magic-vijayawada': { lat: 16.5062, lng: 80.6480 },
+  'cross-roads-vijayawada': { lat: 16.5050, lng: 80.6520 },
+  'hotel-manorama-vijayawada': { lat: 16.5100, lng: 80.6300 },
+  'gad-restaurant-gateway-vijayawada': { lat: 16.5080, lng: 80.6450 },
+  'seven-days-restaurant-vijayawada': { lat: 16.5020, lng: 80.6550 },
+  
+  // Guntur
+  'sankar-vilas-guntur': { lat: 16.3015, lng: 80.4485 },
+  'sri-krishna-vilas-guntur': { lat: 16.2990, lng: 80.4430 },
+  'hotel-viceroy-guntur': { lat: 16.3080, lng: 80.4350 },
+  'garam-masala-guntur': { lat: 16.3120, lng: 80.4320 },
+  'subham-pure-veg-guntur': { lat: 16.3040, lng: 80.4410 },
+  'flavour-of-andhra-guntur': { lat: 16.3025, lng: 80.4460 },
+};
+
+// Enrich RESTAURANTS with coordinates
+RESTAURANTS.forEach((r) => {
+  if (RESTAURANT_COORDINATES[r.id]) {
+    r.coordinates = RESTAURANT_COORDINATES[r.id];
+  } else if (CITY_COORDINATES[r.city]) {
+    r.coordinates = {
+      lat: CITY_COORDINATES[r.city].lat + (Math.random() - 0.5) * 0.02,
+      lng: CITY_COORDINATES[r.city].lng + (Math.random() - 0.5) * 0.02,
+    };
+  } else {
+    r.coordinates = { lat: 17.3850, lng: 78.4867 };
+  }
+});
